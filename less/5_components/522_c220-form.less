@@ -1,0 +1,63 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 22. C220 - Form
+========================================================================== */
+
+form {
+    .stats {
+        margin-bottom: 20px;
+        & dt, & dd {
+            padding-top: 7px;
+        }
+        dt {
+            float: left;
+            padding-right: 7px;
+        }
+        dd {
+            padding-left: 45px;
+            input {
+                background-color: #ebebeb;
+                border: 0 none;
+                padding: 7px 5px;
+            }
+        }
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    fieldset {
+        margin-bottom: 10px;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                float: left;
+                p {
+                    float: left;
+                    margin: 0;
+                    padding: 5px 0 5px 15px;
+                    width: 555px;
+                }
+            }
+        }
+    }
+    & .submit, & .continue {
+        background-color: #0893c7;
+        border: 0 none;
+        color: #fff;
+        float: left;
+        letter-spacing: 0.3em;
+        margin-left: 10px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+    }
+    input.submit {
+        padding: 7px 20px 10px;
+    }
+    .button-wrap {
+        *zoom: 1;
+        float: right;
+        .clearfix();
+    }
+}

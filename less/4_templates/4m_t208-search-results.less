@@ -1,0 +1,182 @@
+/* ==========================================================================
+= 12. T208 - Search Results
+========================================================================== */
+
+.search-results-wrapper {
+    margin: 0 auto 12px auto;
+    min-height: 900px;
+    position: relative;
+    width: 980px;
+    .home & {
+        margin-top: 0;
+    }
+    &.preload {
+        display: none;
+    }
+    .filter {
+        background: url(img/legacy-bg-101010-60.png) repeat top left;
+        letter-spacing: 1px;
+        margin: 0 0 10px 0;
+        padding: 20px 0 29px 0;
+        position: relative;
+        top: -8px;
+        ul {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        .filters {
+            display: inline;
+            padding: 0;
+            margin: 0 0 0 115px;
+            p {
+                color: #6dcff6;
+                display: inline;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                font-size: 1em;
+                height: 23px;
+                list-style-type: none;
+                margin: 0 7px 0 0;
+                width: 140px;
+                a {
+                    background: #3f3f3f;
+                    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #535353), color-stop(100%, #3f3f3f));
+                    background: -webkit-linear-gradient(top, #535353, #3f3f3f);
+                    background: -moz-linear-gradient(top, #535353, #3f3f3f);
+                    background: -o-linear-gradient(top, #535353, #3f3f3f);
+                    background: linear-gradient(top, #535353, #3f3f3f);
+                    border-color: transparent #070707 #070707 transparent;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 3px;
+                    color: #fff;
+                    display: block;
+                    line-height: 23px;
+                    margin: 0;
+                    text-align: center;
+                    padding: 0;
+                    text-decoration: none;
+                    &.active, &:hover {
+                        background: #5c5c5c;
+                        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d5d5d), color-stop(100%, #5c5c5c));
+                        background: -webkit-linear-gradient(top, #5d5d5d, #5c5c5c);
+                        background: -moz-linear-gradient(top, #5d5d5d, #5c5c5c);
+                        background: -o-linear-gradient(top, #5d5d5d, #5c5c5c);
+                        background: linear-gradient(top, #5d5d5d, #5c5c5c);
+                        border-color: #070707;
+                    }
+                }
+            }
+        }
+    }
+    .description {
+        background: url(img/legacy-bg-666-90.png) repeat top left;
+        color: #fff;
+        font-family: "ExpertSansLight", Helvetica, Arial;
+        font-size: 2em;
+        line-height: 1.3em;
+        margin: 0;
+        margin-bottom: 20px;
+        outline: 0 none;
+        padding: 15px 96px;
+        text-align: center;
+        a, & span.highlight {
+            color: #fff;
+        }
+    }
+    .search-results-container {
+        margin: 0;
+        min-height: 500px;
+        overflow: hidden;
+        padding: 75px 0 0 0;
+        position: relative;
+        width: 980px;
+        .content-aside, &.supporting {
+            float: right;
+            position: relative;
+            width: 316px;
+        }
+        .content-aside {
+            margin: -75px 0 0 0;
+            width: 322px;
+        }
+    }
+    .search-results-container.supporting {
+        clear: right;
+        display: none;
+        margin: 0;
+        min-height: 0;
+        padding: 0;
+    }
+    .search-results-container.list {
+        .supporting {
+            display: block;
+        }
+    }
+}
+.rgba .search-results-wrapper {
+    .filter {
+        background: rgba(16, 16, 16, 0.6);
+    }
+    .description {
+        background: rgba(102, 102, 102, 0.9);
+    }
+}
+.search-results-wrapper .search-results-container.supporting .promo, .search-results-wrapper .search-results-container.supporting .quote {
+    float: none;
+    margin-left: 0;
+}
+.search-results-wrapper .search-results-container.supporting .promo-article, .search-results-wrapper .search-results-container.supporting .promo-product {
+    display: none;
+}
+.search-results-wrapper .search-results-container.supporting .promo-small-wide, .search-results-wrapper .search-results-container.supporting .promo-large {
+    display: none;
+}
+.search-results-wrapper .search-results-container .promo, .search-results-wrapper .search-results-container .quote {
+    float: left;
+    margin-left: 8px;
+}
+.search-results-wrapper .search-results-container.list .promo, .search-results-wrapper .search-results-container.list .quote {
+    float: none;
+}
+.search-results-wrapper .search-results-container.list.filtering-enabled &>.promo, .search-results-wrapper .search-results-container.list.filtering-enabled &>.quote {
+    display: none;
+}
+.search-results-wrapper .search-results-container.list.filtering-enabled &>.promo.show, .search-results-wrapper .search-results-container.list.filtering-enabled &>.quote.show {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    display: block !important;
+}
+.isotope-item {
+    z-index: 2;
+}
+.isotope-item.show {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+    display: block !important;
+}
+.promo-article.show, .promo-product.show, .quote-article.show, .article-volume.show, .product.show {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+    display: block !important;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope, .isotope-item {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.isotope:hover, .isotope-item:hover {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.no-results .description {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,132 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 13. T209 - Expert Profile
+========================================================================== */
+.expert-profile {
+    .breadcrumb {
+        margin-top: 10px;
+    }
+    .expert-profile-header {
+        background: url(img/legacy-bg-000-70.png) repeat top left;
+        *zoom: 1;
+        color: #fff;
+        margin-top: 10px;
+        padding: 0 0 0 30px;
+        position: relative;
+        width: 950px;
+        .clearfix();
+        ul {
+            padding: 0;
+            li {
+                float: left;
+                list-style: none;
+            }
+            li.expert-profile-details {
+                padding-right: 10px;
+                width: 26em;
+            }
+            li.expert-profile-quote {
+                float: right;
+                padding-right: 25px;
+            }
+        }
+        .add-to-dock {
+            position: relative;
+            left: -30px;
+        }
+        h1 {
+            color: #fff;
+            line-height: 0.95em;
+            margin-bottom: 12px;
+            font-size: 3.66667em;
+            small {
+                font-size: 61%;
+            }
+        }
+        .social {
+            margin: 0 0 0.9em;
+        }
+        blockquote {
+            background: url(img/quotation-marks-white.png) no-repeat top left;
+            float: right;
+            margin: 0;
+            padding: 20px 0 0 30px;
+            width: 12em;
+        }
+        .stats {
+            display: block;
+            margin: 0.5em 0 0 0;
+            font-family: "ExpertSansLight", Helvetica, Arial;
+            font-size: 2em;
+            dt {
+                display: none;
+            }
+            dd {
+                line-height: 1.3;
+                margin: 0;
+            }
+        }
+        
+    }
+    .copy {
+        float: left;
+        h2 {
+            font-family: "ExpertSansBold", Helvetica, Arial;
+            font-size: 1.16667em;
+            letter-spacing: 0.1em;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+    }
+    .content-aside {
+        .module.publications {
+            overflow: hidden;
+            padding: 0;
+            .copy {
+                background: #EBEBEB;
+                padding: 8px 20px;
+                width: 276px;
+                h2 {
+                    font-size: 1.16667em;
+                    padding-bottom: 0;
+                    text-align: left;
+                }
+                h3 {
+                    font-family: "ExpertSansBold", Helvetica, Arial;
+                    font-size: 1em;
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .temp-cms-twocol {
+        float: left;
+        margin-bottom: 15px;
+        width: 632px;
+        .copy {
+            float: left;
+            padding-right: 0;
+            width: 280px;
+            h2 {
+                border-bottom: 1px solid #e5e5e5;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    border-bottom: 1px solid #e5e5e5;
+                    padding: 0.2em;
+                }
+            }
+        }
+    }
+}
+.rgba .expert-profile .expert-profile-header {
+    background: rgba(0, 0, 0, 0.8);
+}
+.lt-ie8 .expert-profile .expert-profile-header {
+    padding-bottom: 15px;
+}

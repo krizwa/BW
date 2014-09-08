@@ -1,0 +1,474 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 19. C217 - Carousel
+========================================================================== */
+// IP
+
+.carousel-container {
+    text-align: center;
+}
+.jcarousel ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        outline: 0;
+        padding: 0;
+    }
+}
+.js {
+    .jcarousel {
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: 20000em;
+        }
+        li {
+            float: left;
+        }
+    }
+    .jcarousel-pagination {
+        display: inline-block;
+        height: 30px;
+        margin-bottom: 17px;
+        a {
+            background: transparent url(img/sprite-icon.png) no-repeat;
+            background-position: right -4800px;
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            text-indent: -9999px;
+            width: 21px;
+        }
+        a.active {
+            background-position: left -4800px;
+        }
+        a:focus {
+            border: 0 !important;
+            outline: 0 !important;
+            box-shadow: none !important;
+        }
+    }
+    .carousel-large {
+        padding-bottom: 0;
+        .jcarousel-pagination {
+            a {
+                background-position: right -4808px;
+                text-indent: -9999px;
+            }
+            a.active {
+                background-position: left -4808px;
+            }
+        }
+        .jcarousel {
+            height: 366px;
+            .jcarousel {
+                li:focus {
+                    outline: 0px !important;
+                    border: 0.1px solid #fff !important;
+                }
+            }
+        }
+    }
+    .carousel-small {
+        padding-bottom: 0;
+        .jcarousel {
+            height: 193px;
+            margin-bottom: 12px;
+        }
+    }
+}
+.no-js .jcarousel-next, .no-js .jcarousel-pagination, .no-js .jcarousel-prev {
+    display: none;
+}
+.carousel-large {
+    background: url(img/barclays-sprite.png) 0 -1615px no-repeat;
+    margin: 0 auto;
+    padding: 9px 9px 37px;
+    position: relative;
+    width: 703px;
+    li {
+        height: 366px;
+        width: 703px;
+    }
+    .jcarousel-prev {
+        background-position: 0 -1383px;
+        left: -121px;
+    }
+    .jcarousel-next {
+        right: -122px;
+    }
+    ul {
+        li {
+            background: #ffffff url(img/legacy-bg-fff-f0f0f0.png) bottom left repeat-x;
+            background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #efefef));
+            background: -webkit-linear-gradient(top, #fefefe, #efefef);
+            background: -moz-linear-gradient(top, #fefefe, #efefef);
+            background: -o-linear-gradient(top, #fefefe, #efefef);
+            background: linear-gradient(top, #fefefe, #efefef);
+            height: 366px;
+            text-align: center;
+            position: relative;
+            width: 703px;
+            .add-to-dock {
+                color: #fff;
+                left: 10px;
+                top: 0;
+                position: absolute;
+            }
+            h2 {
+                font-family: "ExpertSansBold", Helvetica, Arial;
+                font-size: 1.16667em;
+                letter-spacing: 0.2em;
+                padding: 40px 0 0 0;
+                text-transform: uppercase;
+            }
+            h3 {
+                font-family: "ExpertSansLight", Helvetica, Arial;
+                font-size: 2.83333em;
+                line-height: 1.3;
+                padding-left: 30px;
+            }
+            a.main-title {
+                color: black;
+            }
+            p.snippet {
+                font-family: "ExpertSansLight", Helvetica, Arial;
+                font-size: 1.16667em;
+                line-height: 1.4;
+                padding-left: 30px;
+            }
+            .button {
+                background-color: #646464;
+                background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #808080), color-stop(100%, #555555));
+                background: -webkit-linear-gradient(top, #808080, #555555);
+                background: -moz-linear-gradient(top, #808080, #555555);
+                background: -o-linear-gradient(top, #808080, #555555);
+                background: linear-gradient(top, #808080, #555555);
+                color: #fff;
+                display: inline-block;
+                font-size: 0.91667em;
+                letter-spacing: 0.2em;
+                padding: 0.5em 1em;
+            }
+            img {
+                -webkit-box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
+                -moz-box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
+                box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
+                float: right;
+                margin: 30px 20px 50px 60px;
+            }
+            .image-section {
+                display: block;
+                float: right;
+            }
+            .text-section {
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        }
+        li:focus {
+            -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        }
+        li.apperture {
+            h2 {
+                padding-left: 30px;
+            }
+            h3 {
+                line-height: 1.23;
+                margin-bottom: 0.56em;
+            }
+            img {
+                margin-left: 30px;
+            }
+            p.snippet {
+                margin-bottom: 1.25em;
+            }
+            .button {
+                margin-left: 30px;
+            }
+        }
+        li.cabinet {
+            img {
+                height: 366px;
+                margin: 0;
+                padding: 0;
+            }
+            .button {
+                bottom: 0;
+                left: 0;
+                position: relative;
+            }
+            a.main-title {
+                h2 {
+                    font-family: "ExpertSansLight", Helvetica, Arial;
+                    font-size: 2.83333em;
+                    letter-spacing: 0.05em;
+                    line-height: 1.11;
+                    padding: 40px 30px 0 30px;
+                    margin-bottom: 0.70em;
+                    text-transform: none;
+                }
+            }
+            p.snippet {
+                margin-bottom: 1.3em;
+                padding-right: 30px;
+            }
+        }
+        li.article {
+            img {
+                height: 366px;
+                margin: 0;
+                padding: 0;
+            }
+            a.main-title {
+                h3 {
+                    font-family: "ExpertSansRegular", Helvetica, Arial;
+                    font-size: 1.33333em;
+                    letter-spacing: 0.2em;
+                    margin-bottom: 0.55em;
+                    padding: 3px 40px 0 40px;
+                    text-transform: uppercase;
+                }
+            }
+            p.snippet {
+                margin-bottom: 2.7em;
+                padding-right: 30px;
+            }
+        }
+        li.apperture-wide {
+            img {
+                padding: 0;
+                margin: 0;
+                width: 0;
+            }
+            h2 {
+                line-height: 1.25;
+                padding: 41px 45px 8px;
+            }
+            a.main-title {
+                h3 {
+                    line-height: 1.25;
+                    padding: 0 60px;
+                    margin-bottom: 0.5em;
+                }
+            }
+            .snippet {
+                padding: 0 65px 0;
+                margin-bottom: 2.87em;
+            }
+            .stats {
+                bottom: 0;
+                left: 40%;
+                position: absolute;
+                dt {
+                    display: none;
+                }
+                dd {
+                    display: inline;
+                    margin: 0;
+                    padding: 0 5px;
+                }
+                dd.date {
+                    border-right: 1px solid;
+                    padding-right: 10px;
+                }
+            }
+        }
+        li.quote {
+            margin: 0;
+            .image-section {
+                float: none;
+                width: 100%;
+            }
+            h2:focus {
+                outline: 2px solid #000 !important;
+                border: 0.1px solid #fff !important;
+            }
+            .add-to-dock {
+                top: 3px;
+            }
+            img {
+                float: none;
+                height: 366px;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            a.main-title {
+                h2 {
+                    background: url(img/quotation-marks.png) no-repeat 30px 0px;
+                    font-family: "ExpertSansLightItalic", Helvetica, Arial;
+                    font-size: 2.33333em;
+                    left: 0;
+                    line-height: 1.2;
+                    letter-spacing: 0;
+                    position: absolute;
+                    padding: 28px 388px 0 35px;
+                    top: 45px;
+                    text-transform: none;
+                }
+            }
+            .button {
+                position: absolute;
+                bottom: 67px;
+                left: 100px;
+            }
+        }
+        li.quote:hover {
+            border: 0 none;
+            width: 703px !important;
+            .button {
+                position: absolute;
+                bottom: 67px;
+                left: 100px;
+            }
+        }
+        li.video {
+            h2 {
+                line-height: 1.25;
+                margin: 70px 33px 9px 33px;
+                padding: 0;
+            }
+            a.main-title {
+                margin: 0 0 15px 20px;
+                padding: 0;
+                h3 {
+                    font-size: 2.58333em;
+                    letter-spacing: 0.01em;
+                    line-height: 1.15;
+                    margin: 0;
+                    padding: 0 20px 10px;
+                }
+            }
+            .video-thumbnail {
+                float: right;
+                right: 20px;
+                overflow: hidden;
+                top: 70px;
+                position: relative;
+                img {
+                    -webkit-box-shadow: 0;
+                    -moz-box-shadow: 0;
+                    box-shadow: 0;
+                    float: none;
+                    margin: 0;
+                }
+                .icon-video {
+                    background: transparent url(img/play.png) center center no-repeat;
+                    cursor: pointer;
+                    opacity: 0.7;
+                    position: absolute;
+                    display: block;
+                    width: 65px;
+                    height: 65px;
+                    text-indent: -9999px;
+                    top: 30%;
+                    right: 30%;
+                }
+                .icon-video:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.carousel-large .jcarousel-prev, .carousel-large .jcarousel-next {
+    background: #333333 url(img/barclays-sprite.png) no-repeat 0 -1279px;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    top: 158px;
+    text-indent: -9999em;
+    outline: 0;
+    width: 60px;
+}
+.carousel-large .jcarousel-prev:focus, .carousel-large .jcarousel-next:focus {
+    -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+    -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+}
+.lt-ie9 .carousel-large .jcarousel-prev:focus, .lt-ie9 .carousel-large .jcarousel-next:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.carousel-small {
+    background: url(img/barclays-sprite.png) 0 -2078px no-repeat;
+    height: 245px;
+    margin-left: 7px;
+    padding: 8px 7px;
+    width: 611px;
+    li {
+        height: 193px;
+        width: 611px;
+    }
+    .jcarousel-prev {
+        background-position: left -4600px;
+    }
+    .jcarousel-next {
+        background-position: right -4600px;
+    }
+    .promo-service-carousel {
+        min-height: 193px;
+        .promo-inner:hover {
+            min-height: 193px;
+        }
+    }
+    .promo-service-carousel:hover {
+        min-height: 193px;
+    }
+}
+.carousel-small .jcarousel-prev, .carousel-small .jcarousel-next {
+    background: transparent url(img/sprite-icon.png) no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-indent: -999em;
+}
+.carousel-small .jcarousel-prev:focus, .carousel-small .jcarousel-next:focus {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.cssgradients .carousel-large ul li {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #efefef));
+    background-image: -webkit-linear-gradient(top, #fefefe, #efefef);
+    background-image: -moz-linear-gradient(top, #fefefe, #efefef);
+    background-image: -o-linear-gradient(top, #fefefe, #efefef);
+    background-image: linear-gradient(top, #fefefe, #efefef);
+}
+.lt-ie9 .carousel-large {
+    ul {
+        li:focus {
+            outline: 2px solid #fff !important;
+        }
+        li {
+            h2 {
+                letter-spacing: 0.17em;
+            }
+            p.snippet {
+                letter-spacing: 0;
+            }
+        }
+        li.apperture {
+            h2 {
+                letter-spacing: 0.17em;
+            }
+            h3 {
+                letter-spacing: 0.04em;
+            }
+            p.snippet {
+                letter-spacing: 0;
+            }
+        }
+    }
+}

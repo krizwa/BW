@@ -1,0 +1,38 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 21. C219 - Content quote
+========================================================================== */
+
+.article .content-primary, .generic-content .content-primary, .story .content-primary, .expert-profile-header {
+    & blockquote {
+        background: url(img/quotation-marks.png) no-repeat top left;
+        float: left;
+        font-family: "ExpertSansLightItalic", Helvetica, Arial;
+        font-size: 2.33333em;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin: 0 1.7em 0 -8px;
+        padding: 1em 0 0.2em 8px;
+        text-align: center;
+        width: 6em;
+        &.figure {
+            background: url(img/figure-quotation-bg.png) no-repeat 10px top;
+            float: right;
+            margin: 0 0 0 1em;
+            min-height: 6.5em;
+            padding: 0 0 0.2em;
+            width: 10em;
+        }
+        &.figure strong {
+            color: #007eb6;
+            font-family: "ExpertSansLightItalic", Helvetica, Arial;
+            font-size: 3.5em;
+            line-height: 0.8;
+        }
+    }
+}
+.article .content-primary blockquote {
+    font-size: 2em;
+    // overide above style as parent container article content primary is set to 14 not default 12 */
+}

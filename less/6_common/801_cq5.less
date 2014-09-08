@@ -1,0 +1,198 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 1. cq5.css - Column Layout
+========================================================================== */
+
+/* parsys component */
+div.par, div.rightpar {
+    clear: both;
+}
+div.parsys_column {
+    height: 100%;
+    width: 100%;
+    float: left;
+    border: 0;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    .section {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+div.section {
+    // Property added to avoid IE hasLayout issue on paragraphs. see #20817 - IE6: div around Drag Components image not big enough
+    zoom: 1;
+}
+
+/* column control layouts */
+div.cq-colctrl {
+    &-cols {
+        width: 100%;
+        float: left;
+    }
+    &-default {
+        width: 100%;
+    }
+    // layout 0 : 50% 50% ( grid6 + grid6 )     
+    &-lt0 {} 
+    &-lt0-c0 {
+        width: 340px;
+        margin-right: 10px
+    }
+    &-lt0-c1 {
+        width: 340px;
+        margin-left: 10px
+    }
+    // layout 1 : 33% 33% 33%( grid4 + grid4 + grid4 ) 
+        &-lt1 {} &-lt1-c0 {
+        width: 220px;
+        margin-right: 10px;
+    }
+    &-lt1-c1 {
+        width: 220px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt1-c2 {
+        width: 220px;
+        margin-left: 10px;
+    }
+    // layout 2: 16% 16% 16% 33% ( grid2.6 + grid2.6 + grid2.6 + grid4 ) 
+    &-lt2 {} 
+    &-lt2-c0 {
+        width: 140px;
+        margin-right: 10px;
+    }
+    &-lt2-c1 {
+        width: 140px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    &-lt2-c2 {
+        width: 140px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    &-lt2-c3 {
+        width: 220px;
+        margin-left: 10px
+    }
+    // layout 3: 4 x 25% ( grid3 + grid3 + grid3 + grid3 ) 
+    &-lt3 {} 
+    &-lt3-c0 {
+        width: 160px;
+        margin-right: 10px;
+    }
+    &-lt3-c1 {
+        width: 160px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt3-c2 {
+        width: 160px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt3-c3 {
+        width: 160px;
+        margin-left: 10px;
+    }
+    // layout 4: 5 x 20% ( grid2.5 + grid2.5 + grid2.5 + grid2.5 + grid2.5 ) 
+    &-lt4 {} 
+    &-lt4-c0 {
+        width: 124px;
+        margin-right: 10px;
+    }
+    &-lt4-c1 {
+        width: 124px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt4-c2 {
+        width: 124px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt4-c3 {
+        width: 124px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-lt4-c4 {
+        width: 124px;
+        margin-left: 10px;
+    }
+    // widepage layouts 
+    // layout 5 : 50% 50% ( grid8 + grid8 ) 
+    &-lt5 {} 
+    &-lt5-c0 {
+        width: 460px;
+        margin-right: 10px
+    }
+    &-lt5-c1 {
+        width: 460px;
+        margin-left: 10px
+    }
+    // layout 6 : 25% 25% ( grid4 + grid4 + grid4 + grid4) 
+    &-lt6 {} 
+    &-lt6-c0 {
+        width: 220px;
+        margin-right: 10px
+    }
+    &-lt6-c1 {
+        width: 220px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    &-lt6-c2 {
+        width: 220px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    &-lt6-c3 {
+        width: 220px;
+        margin-left: 10px
+    }
+}
+
+/* BW layout for  2 Column : 30% 70%  */
+div.bw-colctrl {
+    &-lt0 {} 
+    &-lt0-c0 {
+        width: 316px;
+        margin-right: 8px
+    }
+    &-lt0-c1 {
+        width: 640px;
+        margin-left: 0px
+    }
+    // BW layout for  2 Column : 70% 30% 
+    &-lt1 {} 
+    &-lt1-c0 {
+        width: 640px;
+        margin-right: 8px
+    }
+    &-lt1-c1 {
+        width: 316px;
+        margin-left: 0px
+    }
+    // BW layout for  3 Column : 33% 33% 33% 
+    &-lt2 {} 
+    &-lt2-c0 {
+        width: 316px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    &-lt2-c1 {
+        width: 316px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &-lt2-c2 {
+        width: 316px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
