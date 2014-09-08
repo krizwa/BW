@@ -1,5 +1,5 @@
 /* ==========================================================================
-= 10. C207 - Product comparison table IP
+= 10. C207 - Product comparison table 
 ========================================================================== */
 
 .product-comparison-table-module {
@@ -26,6 +26,19 @@
         th {
             line-height: 1.1;
             padding-bottom: 8px;
+        }
+
+        & th, & td {
+                font-family: "ExpertSansBold", Helvetica, Arial;
+                font-size: 1em;
+                padding-top: 4px;
+                text-align: center;
+                width: 105px;
+            }
+         & th:first-child, & td:first-child {
+                font-family: "ExpertSansRegular", Helvetica, Arial;
+                font-size: 1.5em;
+                width: 305px;
         }
         tr {
             background-color: #f0f0f0;
@@ -71,25 +84,10 @@
         text-align: center;
     }
 }
-.lt-ie9 {
-    .product-comparison-table-module {
-        table {
-            margin-left: 20px;
-        }
-    }
+.lt-ie9 .product-comparison-table-module table {
+    margin-left: 20px;
 }
-.product-comparison-table-module table th,.product-comparison-table-module table td {
-    font-family: "ExpertSansBold", Helvetica, Arial;
-    font-size: 1em;
-    padding-top: 4px;
-    text-align: center;
-    width: 105px;
-}
-.product-comparison-table-module table th:first-child,.product-comparison-table-module table td:first-child {
-    font-family: "ExpertSansRegular", Helvetica, Arial;
-    font-size: 1.5em;
-    width: 305px;
-}
+
 .product-benefits-module,.generic-content .content-aside {
     width: 316px;
     float: left;

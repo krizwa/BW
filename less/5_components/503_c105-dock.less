@@ -120,6 +120,12 @@
     margin-right: -10px;
     padding: 6px 0.5em;
     width: 187px;
+    &:focus {
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        outline: 0;
+    }
     .indicator {
         background: transparent url(img/barclays-sprite.png) 0 -2615px no-repeat;
         height: 30px;
@@ -237,12 +243,7 @@
         }
     }
 }
-.dock-handle:focus {
-    -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-    -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-    box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-    outline: 0;
-}
+
 .lt-ie9 .dock-handle:focus {
     outline: 2px solid #fff !important;
     border: 0.1px solid #000 !important;
