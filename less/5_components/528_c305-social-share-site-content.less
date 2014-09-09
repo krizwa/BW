@@ -1,6 +1,6 @@
 @import "../1_global/00_required.less";
 /* ==========================================================================
-= 28. C305 - Social share for site content IP 
+= 28. C305 - Social share for site content 
 ========================================================================== */
 .social {
     *zoom: 1;
@@ -39,15 +39,16 @@
         strong {
             line-height: 1.8;
         }
-        .social-email {
-            a {
-                background-position: 0 -202px;
-            }
+        & .social-email a, & .social-print a, & .social-share >a {
+            background: transparent url(img/sprite-icon.png) no-repeat;
+            padding-left: 23px;
+            letter-spacing: 0.1em;
         }
-        .social-print {
-            a {
+        .social-email a {
+                background-position: 0 -202px;
+        }
+        .social-print a {
                 background-position: 0 -402px;
-            }
         }
         .social-share {
             position: relative;
@@ -117,11 +118,7 @@
         border: 0.1px solid #fff !important;
     }
 }
-.social ul .social-email a,.social ul .social-print a,.social ul .social-share &>a {
-    background: transparent url(img/sprite-icon.png) no-repeat;
-    padding-left: 23px;
-    letter-spacing: 0.1em;
-}
+
 .no-js .social ul .social-email a,.no-js .social ul .social-print a,.no-js .social ul .social-share &>a {
     display: none;
 }

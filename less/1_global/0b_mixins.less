@@ -107,6 +107,15 @@
     -moz-background-clip: @type;
     background-clip: @boxtype;
 }
+// .filter(grayscale, 1, 100%, gray); 
+.filter(@functionstype:grayscale, @webkitValue: 1, @value: 100%, @color: gray) {
+    -webkit-filter: @functionstype(@webkitValue);
+    -webkit-filter: @functionstype(@value);
+    -moz-filter: @functionstype(@value);
+    -ms-filter: @functionstype(@value);
+    -o-filter: @functionstype(@value);
+    filter: @color;
+}
 // .clearfix();
 .clearfix(){
     &:after {

@@ -57,9 +57,7 @@
         }
     }
     .page-navigation-list:focus h2 {
-        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        .box-shadow-style2(1px, white, 3px, black); 
         margin-top: 5px;
         padding-top: 1px;
         overflow: hidden;
@@ -162,11 +160,9 @@
         }
     }
 }
-.lt-ie9 .in-page-navigation-volume-details .page-navigation-list ul {
-    .button {
-        color: #fff;
-        margin: 0 0 0 76px;
-    }
+.lt-ie9 .in-page-navigation-volume-details .page-navigation-list ul .button {
+    color: #fff;
+    margin: 0 0 0 76px;
 }
 .no-js .in-page-navigation-volume-details {
     .page-navigation-list {

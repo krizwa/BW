@@ -1,7 +1,7 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 16. C214 - Research landing grid IP
+= 16. C214 - Research landing grid 
 ========================================================================== */
 
 .research-grid {
@@ -130,6 +130,9 @@
             background: transparent url(img/play.png) center center no-repeat;
             opacity: 0.8;
         }
+        &:hover figure:after {
+            opacity: 1;
+        }
         img {
             width: 332px;
             height: 264px;
@@ -171,9 +174,7 @@
             }
         }
     }
-    li.grid-video:hover figure:after {
-        opacity: 1;
-    }
+    
     li.grid-article-1 {
         background: #f5f5f5;
         background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));

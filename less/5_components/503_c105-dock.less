@@ -1,7 +1,7 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 3. C105 - Dock IP 
+= 3. C105 - Dock 
 ========================================================================== */
 
 .dock-container {
@@ -32,8 +32,6 @@
 .lt-ie9 .dock-container a:focus {
     outline: 1px solid #fff !important;
 }
-
-
 .dock-container.dock-open {
     height: 400px;
 }
@@ -45,7 +43,6 @@
     display: none;
     float: left;
     width: 750px;
-    
     .content-wrap {
         *zoom: 1;
         background: none;
@@ -97,7 +94,6 @@
             }
         }
     }
-
 }
 .dock-handle-container {
     margin: -43px auto 0;
@@ -107,12 +103,8 @@
 .cookie-overlay {
     display: none;
 }
-.dock-handle { 
-    -webkit-border-radius: 2px 2px 0 0;
-    -moz-border-radius: 2px 2px 0 0;
-    -ms-border-radius: 2px 2px 0 0;
-    -o-border-radius: 2px 2px 0 0;
-    border-radius: 2px 2px 0 0;
+.dock-handle {
+    .border-radius-custom (2px, 2px, 0, 0); 
     background: #272727;
     cursor: pointer;
     float: right;
@@ -121,15 +113,16 @@
     padding: 6px 0.5em;
     width: 187px;
     &:focus {
-        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        .box-shadow-style2(1px, white, 3px, black);
         outline: 0;
     }
     .indicator {
         background: transparent url(img/barclays-sprite.png) 0 -2615px no-repeat;
         height: 30px;
         padding: 0 0 0 37px;
+        .dock-open & {
+            background-position: 0 -2645px;
+        }
     }
     h2 {
         color: #fff;
@@ -140,6 +133,9 @@
         line-height: 1;
         margin-bottom: 2px;
         text-transform: uppercase;
+        .dock-disabled &, .no-js & {
+            display: none;
+        }
     }
     p {
         clear: left;
@@ -148,13 +144,12 @@
         float: left;
         line-height: 1;
         width: 140px;
+        .dock-disabled &, .no-js & {
+            display: none;
+        }
     }
     .dock-contact {
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
-        border-radius: 2px;
+        .border-radius (2px);
         background: #5f6362;
         color: #fff;
         float: right;
@@ -166,101 +161,38 @@
 }
 .cssgradients {
     .dock-handle {
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #474747), color-stop(100%, #272727));
-        background-image: -webkit-linear-gradient(top, #474747, #272727);
-        background-image: -moz-linear-gradient(top, #474747, #272727);
-        background-image: -o-linear-gradient(top, #474747, #272727);
-        background-image: linear-gradient(top, #474747, #272727);
+        .gradient (top, #474747, #272727);
         .dock-contact {
-            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #919393), color-stop(100%, #626564));
-            background-image: -webkit-linear-gradient(top, #919393, #626564);
-            background-image: -moz-linear-gradient(top, #919393, #626564);
-            background-image: -o-linear-gradient(top, #919393, #626564);
-            background-image: linear-gradient(top, #919393, #626564);
+            .gradient (top, #919393, #626564);
         }
     }
-    .dock-cookie-overlay {
-        .cookie-overlay {
-            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6d6d6d), color-stop(100%, #5b5b5b));
-            background-image: -webkit-linear-gradient(top, #6d6d6d, #5b5b5b);
-            background-image: -moz-linear-gradient(top, #6d6d6d, #5b5b5b);
-            background-image: -o-linear-gradient(top, #6d6d6d, #5b5b5b);
-            background-image: linear-gradient(top, #6d6d6d, #5b5b5b);
-        }
+    .dock-cookie-overlay .cookie-overlay {
+        .gradient (top, #6d6d6d, #5b5b5b);
     }
     .dock-alert {
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
-        background-image: -webkit-linear-gradient(top, #ffffff, #eaeaea);
-        background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
-        background-image: -o-linear-gradient(top, #ffffff, #eaeaea);
-        background-image: linear-gradient(top, #ffffff, #eaeaea);
+        .gradient (top, #ffffff, #eaeaea);
     }
     .dock-content {
-        .dock-info-tour {
-            li {
-                background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dbdbdb), color-stop(100%, #cacaca));
-                background-image: -webkit-linear-gradient(top, #dbdbdb, #cacaca);
-                background-image: -moz-linear-gradient(top, #dbdbdb, #cacaca);
-                background-image: -o-linear-gradient(top, #dbdbdb, #cacaca);
-                background-image: linear-gradient(top, #dbdbdb, #cacaca);
-            }
+        .dock-info-tour li {
+            .gradient (top, #dbdbdb, #cacaca);
         }
-        .jcarousel {
-            #dock-info {
-                li.deactive {
-                    a.unread {
-                        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #808080), color-stop(100%, #727272));
-                        background-image: -webkit-linear-gradient(top, #808080, #727272);
-                        background-image: -moz-linear-gradient(top, #808080, #727272);
-                        background-image: -o-linear-gradient(top, #808080, #727272);
-                        background-image: linear-gradient(top, #808080, #727272);
-                    }
-                }
-            }
+        .jcarousel #dock-info li.deactive a.unread {
+            .gradient (top, #808080, #727272);
         }
     }
-    .dock-collection {
-        .unread {
-            background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #fece01), color-stop(100%, #e1b701));
-            background-image: -webkit-linear-gradient(bottom, #fece01, #e1b701);
-            background-image: -moz-linear-gradient(bottom, #fece01, #e1b701);
-            background-image: -o-linear-gradient(bottom, #fece01, #e1b701);
-            background-image: linear-gradient(bottom, #fece01, #e1b701);
-        }
+    .dock-collection .unread {
+        .gradient (bottom, #fece01, #e1b701);
     }
     .dock-recommended {
-        background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #393939), color-stop(100%, #272727));
-        background-image: -webkit-linear-gradient(left, #393939, #272727);
-        background-image: -moz-linear-gradient(left, #393939, #272727);
-        background-image: -o-linear-gradient(left, #393939, #272727);
-        background-image: linear-gradient(left, #393939, #272727);
+        .gradient (left, #393939, #272727);
         .dock-recommended-footer {
-            background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #363636), color-stop(100%, #272727));
-            background-image: -webkit-linear-gradient(left, #363636, #272727);
-            background-image: -moz-linear-gradient(left, #363636, #272727);
-            background-image: -o-linear-gradient(left, #363636, #272727);
-            background-image: linear-gradient(left, #363636, #272727);
+            .gradient (left, #363636, #272727);
         }
     }
 }
-
 .lt-ie9 .dock-handle:focus {
     outline: 2px solid #fff !important;
     border: 0.1px solid #000 !important;
-}
-.dock-open {
-    .dock-handle .indicator {
-        background-position: 0 -2645px;
-    }
-    .dock-alert {
-        bottom: 455px;
-    }
-}
-.dock-disabled .dock-handle h2, .no-js .dock-handle h2 {
-    display: none;
-}
-.dock-disabled .dock-handle p, .no-js .dock-handle p {
-    display: none;
 }
 .dock-disabled .dock-handle .dock-contact, .no-js .dock-handle .dock-contact {
     margin-left: 0;
@@ -280,11 +212,7 @@
     width: 100%;
 }
 .dock-alert {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    .border-radius (5px);
     background: #fff;
     border: 5px solid #999;
     display: none;
@@ -295,16 +223,15 @@
     line-height: 1.4em;
     text-align: center;
     width: 175px;
+    .dock-open & {
+        bottom: 455px;
+    }
     .dock-alert-info {
         padding-bottom: 10px;
     }
     .dock-alert-cookie {
         *zoom: 1;
-    }
-    .dock-alert-cookie:after {
-        content: "";
-        display: table;
-        clear: both;
+        .clearfix();
     }
     .field-cookie {
         float: left;
@@ -348,6 +275,9 @@
     margin: 0 auto;
     position: relative;
     width: 980px;
+    & h3, & p, & a {
+        color: #fff;
+    }
     .button-gray-dark {
         color: #797979;
         cursor: default;
@@ -424,28 +354,21 @@
             }
         }
     }
-    .jcarousel {
-        #dock-info {
-            li.deactive {
-                a {
-                    cursor: default !important;
-                    outline: none !important;
-                    text-decoration: none !important;
-                }
-                a.unread {
-                    background: #767676 url("img/dock-item-deactive-legacy-bg.png") repeat-x bottom left;
-                    border-top: 1px solid #a9a9a9 !important;
-                    cursor: default;
-                    span {
-                        border-top: 1px solid #b2b2b2 !important;
-                    }
-                }
+    .jcarousel #dock-info li.deactive {
+        a {
+            cursor: default !important;
+            outline: none !important;
+            text-decoration: none !important;
+        }
+        a.unread {
+            background: #767676 url("img/dock-item-deactive-legacy-bg.png") repeat-x bottom left;
+            border-top: 1px solid #a9a9a9 !important;
+            cursor: default;
+            span {
+                border-top: 1px solid #b2b2b2 !important;
             }
         }
     }
-}
-.dock-content h3, .dock-content p, .dock-content a {
-    color: #fff;
 }
 .dock-carousel-container.carousel-disabled .jcarousel-prev, .dock-carousel-container.carousel-disabled .jcarousel-pagination, .dock-carousel-container.carousel-disabled .jcarousel-next {
     display: none;
@@ -458,6 +381,16 @@
             margin-bottom: 6px;
             overflow: visible;
             width: 640px;
+        }
+        & .jcarousel-prev, & .jcarousel-pagination, & .jcarousel-next {
+            float: right;
+        }
+        & .jcarousel-prev, & .jcarousel-next {
+            background: #313131 url(img/sprite-icon.png) left -5600px no-repeat;
+            height: 60px;
+            width: 59px;
+            margin: 2px 0 0;
+            text-indent: -999em;
         }
         .jcarousel-next {
             background-position: right -5600px;
@@ -476,19 +409,10 @@
         }
     }
 }
-.js .dock-carousel-container .jcarousel-prev, .js .dock-carousel-container .jcarousel-pagination, .js .dock-carousel-container .jcarousel-next {
-    float: right;
-}
-.js .dock-carousel-container .jcarousel-prev, .js .dock-carousel-container .jcarousel-next {
-    background: #313131 url(img/sprite-icon.png) left -5600px no-repeat;
-    height: 60px;
-    width: 59px;
-    margin: 2px 0 0;
-    text-indent: -999em;
-}
 .dock-collection-container {
     *zoom: 1;
     width: 700px;
+    .clearfix();
     .dock-filters {
         list-style-type: none;
         margin: 0 auto;
@@ -523,11 +447,6 @@
         outline: 1px dotted #a5acaa;
     }
 }
-.dock-collection-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 .dock-collection {
     list-style-type: none;
     padding: 0;
@@ -541,6 +460,9 @@
         position: relative;
         text-align: center;
         width: 154px;
+        & h3, & p, & a {
+            color: black;
+        }
         .content {
             border-top: 1px solid #c0c0c0;
             display: block;
@@ -584,12 +506,7 @@
         }
     }
     .remove-from-dock {
-        background-color: #858b89;
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b5bbb9), color-stop(100%, #858b89));
-        background: -webkit-linear-gradient(top, #b5bbb9, #858b89);
-        background: -moz-linear-gradient(top, #b5bbb9, #858b89);
-        background: -o-linear-gradient(top, #b5bbb9, #858b89);
-        background: linear-gradient(top, #b5bbb9, #858b89);
+        .gradient-bc (top, #858b89, #b5bbb9, #858b89);
         border: 1px solid #979d9b;
         color: #fff;
         cursor: pointer;
@@ -605,9 +522,6 @@
         width: 28px;
     }
 }
-.dock-collection li h3, .dock-collection li p, .dock-collection li a {
-    color: black;
-}
 .dock-collection-header {
     border-bottom: 1px solid #5d5d5d;
     line-height: 1;
@@ -616,38 +530,27 @@
     padding: 17px 0 12px;
     width: 640px;
 }
-.dock-collection-header-disabled {
-    a {
-        color: #575757;
-        cursor: default;
-        text-decoration: none !important;
-    }
+.dock-collection-header-disabled a {
+    color: #575757;
+    cursor: default;
+    text-decoration: none !important;
 }
 .dock-collection-footer {
     *zoom: 1;
     border-top: 1px solid #5d5d5d;
     padding: 15px 0;
     width: 640px;
+    .clearfix();
     a {
         float: left;
         margin-right: 14px;
     }
 }
-.dock-collection-footer:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.dock-carousel-container {
-    .jcarousel {
-        height: 195px;
-    }
+.dock-carousel-container .jcarousel {
+    height: 195px;
 }
 .dock-recommended {
-    -webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
+    .transition (all, 0.6s, ease-in-out);
     background: #272727;
     border-left: 60px solid #272727;
     color: #fff;
@@ -733,6 +636,15 @@
         width: 216px;
         height: 39px;
     }
+    & h4, & .content-type {
+        font-family: "ExpertSansLight", Helvetica, Arial;
+        font-size: 1em;
+        font-weight: normal;
+        letter-spacing: 0.2em;
+        line-height: 1.2em;
+        margin: 0;
+        text-transform: uppercase;
+    }
     .content-type {
         display: block;
         font-family: "ExpertSansBold", Helvetica, Arial;
@@ -752,25 +664,15 @@
         float: left;
         width: 178px;
     }
-    .dock-recommended-content {
-        ul {
-            li {
-                div {
-                    display: block;
-                    float: left;
-                    width: 178px;
-                }
-            }
-        }
+    .dock-recommended-content ul li div {
+        display: block;
+        float: left;
+        width: 178px;
     }
 }
-.rgba {
-    .dock-recommended {
-        border-left-color: rgba(39, 39, 39, 0.6);
-        -webkit-background-clip: padding;
-        -moz-background-clip: padding;
-        background-clip: padding-box;
-    }
+.rgba .dock-recommended {
+    border-left-color: rgba(39, 39, 39, 0.6);
+    .background-clip(padding, padding-box);
 }
 .dock-recommended-open {
     border-left: 0px;
@@ -778,20 +680,9 @@
     .dock-recommended-handle {
         background-position: center -5616px;
     }
-    ul {
-        li {
-            display: block!important;
-        }
+    ul li {
+        display: block!important;
     }
-}
-.dock-recommended h4, .dock-recommended .content-type {
-    font-family: "ExpertSansLight", Helvetica, Arial;
-    font-size: 1em;
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    line-height: 1.2em;
-    margin: 0;
-    text-transform: uppercase;
 }
 .dock-recommended .add-to-dock, .dock-recommended .add-collection-to-dock {
     background-color: #007eb6;
@@ -809,26 +700,18 @@
 .dock-recommended .add-to-dock:hover, .dock-recommended .add-collection-to-dock:hover {
     text-decoration: none;
 }
-.no-csscolumns {
-    .dock-recommended-open {
-        ul {
-            li:nth-child(3n+3) {
-                border-width: 1px;
-            }
-            li:nth-child(n+7) {
-                border-width: 0px;
-            }
-        }
+.no-csscolumns .dock-recommended-open ul {
+    li:nth-child(3n+3) {
+        border-width: 1px;
+    }
+    li:nth-child(n+7) {
+        border-width: 0px;
     }
 }
-.csscolumns {
-    .dock-recommended-open {
-        ul {
-            width: 708px;
-            li {
-                float: none;
-            }
-        }
+.csscolumns .dock-recommended-open ul {
+    width: 708px;
+    li {
+        float: none;
     }
 }
 #dock-recommended-new {
@@ -869,12 +752,7 @@
         position: static;
     }
     .add-to-dock-added {
-        background-color: #858b89;
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b5bbb9), color-stop(100%, #858b89));
-        background: -webkit-linear-gradient(top, #b5bbb9, #858b89);
-        background: -moz-linear-gradient(top, #b5bbb9, #858b89);
-        background: -o-linear-gradient(top, #b5bbb9, #858b89);
-        background: linear-gradient(top, #b5bbb9, #858b89);
+        .gradient-bc (top, #858b89, #b5bbb9, #858b89);
         border-color: #979d9b;
     }
 }

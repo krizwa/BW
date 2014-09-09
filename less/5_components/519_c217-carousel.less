@@ -1,9 +1,8 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 19. C217 - Carousel
+= 19. C217 - Carousel IP
 ========================================================================== */
-// IP
 
 .carousel-container {
     text-align: center;
@@ -16,75 +15,42 @@
         padding: 0;
     }
 }
-.js {
-    .jcarousel {
-        margin-bottom: 16px;
-        position: relative;
-        overflow: hidden;
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            width: 20000em;
-        }
-        li {
-            float: left;
-        }
+.js .jcarousel {
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 20000em;
     }
-    .jcarousel-pagination {
-        display: inline-block;
-        height: 30px;
-        margin-bottom: 17px;
-        a {
-            background: transparent url(img/sprite-icon.png) no-repeat;
-            background-position: right -4800px;
-            cursor: pointer;
-            display: inline-block;
-            height: 30px;
-            text-indent: -9999px;
-            width: 21px;
-        }
-        a.active {
-            background-position: left -4800px;
-        }
-        a:focus {
-            border: 0 !important;
-            outline: 0 !important;
-            box-shadow: none !important;
-        }
-    }
-    .carousel-large {
-        padding-bottom: 0;
-        .jcarousel-pagination {
-            a {
-                background-position: right -4808px;
-                text-indent: -9999px;
-            }
-            a.active {
-                background-position: left -4808px;
-            }
-        }
-        .jcarousel {
-            height: 366px;
-            .jcarousel {
-                li:focus {
-                    outline: 0px !important;
-                    border: 0.1px solid #fff !important;
-                }
-            }
-        }
-    }
-    .carousel-small {
-        padding-bottom: 0;
-        .jcarousel {
-            height: 193px;
-            margin-bottom: 12px;
-        }
+    li {
+        float: left;
     }
 }
-.no-js .jcarousel-next, .no-js .jcarousel-pagination, .no-js .jcarousel-prev {
-    display: none;
+.js .jcarousel-pagination {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 17px;
+    a {
+        background: transparent url(img/sprite-icon.png) no-repeat;
+        background-position: right -4800px;
+        cursor: pointer;
+        display: inline-block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 21px;
+    }
+    a.active {
+        background-position: left -4800px;
+    }
+    a:focus {
+        border: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
 }
 .carousel-large {
     background: url(img/barclays-sprite.png) 0 -1615px no-repeat;
@@ -95,6 +61,47 @@
     li {
         height: 366px;
         width: 703px;
+    }
+}
+.js .carousel-large {
+    padding-bottom: 0;
+    .jcarousel-pagination {
+        a {
+            background-position: right -4808px;
+            text-indent: -9999px;
+        }
+        a.active {
+            background-position: left -4808px;
+        }
+    }
+    .jcarousel {
+        height: 366px;
+        .jcarousel {
+            li:focus {
+                outline: 0px !important;
+                border: 0.1px solid #fff !important;
+            }
+        }
+    }
+}
+.no-js .jcarousel-next, .no-js .jcarousel-pagination, .no-js .jcarousel-prev {
+    display: none;
+}
+.carousel-large {
+    & .jcarousel-prev, & .jcarousel-next {
+        background: #333333 url(img/barclays-sprite.png) no-repeat 0 -1279px;
+        cursor: pointer;
+        height: 60px;
+        position: absolute;
+        top: 158px;
+        text-indent: -9999em;
+        outline: 0;
+        width: 60px;
+    }
+    & .jcarousel-prev:focus, & .jcarousel-next:focus {
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
     }
     .jcarousel-prev {
         background-position: 0 -1383px;
@@ -381,21 +388,6 @@
         }
     }
 }
-.carousel-large .jcarousel-prev, .carousel-large .jcarousel-next {
-    background: #333333 url(img/barclays-sprite.png) no-repeat 0 -1279px;
-    cursor: pointer;
-    height: 60px;
-    position: absolute;
-    top: 158px;
-    text-indent: -9999em;
-    outline: 0;
-    width: 60px;
-}
-.carousel-large .jcarousel-prev:focus, .carousel-large .jcarousel-next:focus {
-    -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-    -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-    box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-}
 .lt-ie9 .carousel-large .jcarousel-prev:focus, .lt-ie9 .carousel-large .jcarousel-next:focus {
     outline: 2px solid #000 !important;
     border: 0.1px solid #fff !important;
@@ -409,6 +401,19 @@
     li {
         height: 193px;
         width: 611px;
+    }
+    & .jcarousel-prev, & .jcarousel-next {
+        background: transparent url(img/sprite-icon.png) no-repeat;
+        cursor: pointer;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        text-indent: -999em;
+    }
+    & .jcarousel-prev:focus, & .jcarousel-next:focus {
+        border: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
     }
     .jcarousel-prev {
         background-position: left -4600px;
@@ -426,25 +431,20 @@
         min-height: 193px;
     }
 }
-.carousel-small .jcarousel-prev, .carousel-small .jcarousel-next {
-    background: transparent url(img/sprite-icon.png) no-repeat;
-    cursor: pointer;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    text-indent: -999em;
-}
-.carousel-small .jcarousel-prev:focus, .carousel-small .jcarousel-next:focus {
-    border: 0 !important;
-    outline: 0 !important;
-    box-shadow: none !important;
-}
+
 .cssgradients .carousel-large ul li {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #efefef));
     background-image: -webkit-linear-gradient(top, #fefefe, #efefef);
     background-image: -moz-linear-gradient(top, #fefefe, #efefef);
     background-image: -o-linear-gradient(top, #fefefe, #efefef);
     background-image: linear-gradient(top, #fefefe, #efefef);
+}
+.js .carousel-small {
+    padding-bottom: 0;
+    .jcarousel {
+        height: 193px;
+        margin-bottom: 12px;
+    }
 }
 .lt-ie9 .carousel-large {
     ul {
