@@ -1,7 +1,7 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 6. C203 - Product detail module (inc tabs) IP
+= 6. C203 - Product detail module (inc tabs) 
 ========================================================================== */
 
 .campaign .product-details {
@@ -131,6 +131,11 @@
                 padding: 10px 5px 5px;
                 text-transform: uppercase;
             }
+            & th, & td {
+                border-right: 1px solid #dbdbdb;
+                text-align: center;
+                width: 20%;
+            }
             tr {
                 background-color: #393939;
                 td {
@@ -173,11 +178,6 @@
         }
     }
 }
-.product-fund-information .product-fund-summary table th, .product-fund-information .product-fund-summary table td {
-    border-right: 1px solid #dbdbdb;
-    text-align: center;
-    width: 20%;
-}
 .product-fund-information .product-detail-tab-overview .video-module .video-inlne, .product-fund-information .product-detail-tab-overview .video-module object {
     height: 270px;
     width: 430px;
@@ -193,6 +193,9 @@
             overflow: hidden;
             padding-top: 20px;
             position: relative;
+            &:first-child {
+                margin-bottom: 40px;
+            }
             h2 {
                 font-family: "ExpertSansBold", Helvetica, Arial;
                 font-size: 1.5em;
@@ -233,9 +236,6 @@
                     padding-top: 25px;
                 }
             }
-        }
-        li:first-child {
-            margin-bottom: 40px;
         }
     }
 }
