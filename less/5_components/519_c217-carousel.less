@@ -1,7 +1,7 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 19. C217 - Carousel IP
+= 19. C217 - Carousel
 ========================================================================== */
 
 .carousel-container {
@@ -76,11 +76,9 @@
     }
     .jcarousel {
         height: 366px;
-        .jcarousel {
-            li:focus {
-                outline: 0px !important;
-                border: 0.1px solid #fff !important;
-            }
+        .jcarousel li:focus {
+            outline: 0px !important;
+            border: 0.1px solid #fff !important;
         }
     }
 }
@@ -99,9 +97,7 @@
         width: 60px;
     }
     & .jcarousel-prev:focus, & .jcarousel-next:focus {
-        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+       .box-shadow-style2(1px, white, 3px, black); 
     }
     .jcarousel-prev {
         background-position: 0 -1383px;
@@ -113,11 +109,7 @@
     ul {
         li {
             background: #ffffff url(img/legacy-bg-fff-f0f0f0.png) bottom left repeat-x;
-            background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #efefef));
-            background: -webkit-linear-gradient(top, #fefefe, #efefef);
-            background: -moz-linear-gradient(top, #fefefe, #efefef);
-            background: -o-linear-gradient(top, #fefefe, #efefef);
-            background: linear-gradient(top, #fefefe, #efefef);
+            .gradient (top, #fefefe, #efefef);
             height: 366px;
             text-align: center;
             position: relative;
@@ -151,12 +143,9 @@
                 padding-left: 30px;
             }
             .button {
-                background-color: #646464;
-                background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #808080), color-stop(100%, #555555));
-                background: -webkit-linear-gradient(top, #808080, #555555);
-                background: -moz-linear-gradient(top, #808080, #555555);
-                background: -o-linear-gradient(top, #808080, #555555);
-                background: linear-gradient(top, #808080, #555555);
+                
+                .gradient-bc (top, #646464, #808080, #555555);
+ 
                 color: #fff;
                 display: inline-block;
                 font-size: 0.91667em;
@@ -164,9 +153,7 @@
                 padding: 0.5em 1em;
             }
             img {
-                -webkit-box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
-                -moz-box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
-                box-shadow: rgba(153, 153, 153, 0.2) -6px -7px 17px;
+                .box-shadow-style3 (153, 153, 153, 0.2, -6px, -7px, 17px);
                 float: right;
                 margin: 30px 20px 50px 60px;
             }
@@ -181,9 +168,7 @@
             }
         }
         li:focus {
-            -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-            -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
-            box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            .box-shadow-style2(1px, white, 3px, black); 
         }
         li.apperture {
             h2 {
@@ -392,6 +377,36 @@
     outline: 2px solid #000 !important;
     border: 0.1px solid #fff !important;
 }
+.cssgradients .carousel-large ul li {
+    .gradient (top, #fefefe, #efefef);
+}
+.lt-ie9 .carousel-large {
+    ul {
+        li:focus {
+            outline: 2px solid #fff !important;
+        }
+        li {
+            h2 {
+                letter-spacing: 0.17em;
+            }
+            p.snippet {
+                letter-spacing: 0;
+            }
+        }
+        li.apperture {
+            h2 {
+                letter-spacing: 0.17em;
+            }
+            h3 {
+                letter-spacing: 0.04em;
+            }
+            p.snippet {
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+/* small carousel */
 .carousel-small {
     background: url(img/barclays-sprite.png) 0 -2078px no-repeat;
     height: 245px;
@@ -431,44 +446,10 @@
         min-height: 193px;
     }
 }
-
-.cssgradients .carousel-large ul li {
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #efefef));
-    background-image: -webkit-linear-gradient(top, #fefefe, #efefef);
-    background-image: -moz-linear-gradient(top, #fefefe, #efefef);
-    background-image: -o-linear-gradient(top, #fefefe, #efefef);
-    background-image: linear-gradient(top, #fefefe, #efefef);
-}
 .js .carousel-small {
     padding-bottom: 0;
     .jcarousel {
         height: 193px;
         margin-bottom: 12px;
-    }
-}
-.lt-ie9 .carousel-large {
-    ul {
-        li:focus {
-            outline: 2px solid #fff !important;
-        }
-        li {
-            h2 {
-                letter-spacing: 0.17em;
-            }
-            p.snippet {
-                letter-spacing: 0;
-            }
-        }
-        li.apperture {
-            h2 {
-                letter-spacing: 0.17em;
-            }
-            h3 {
-                letter-spacing: 0.04em;
-            }
-            p.snippet {
-                letter-spacing: 0;
-            }
-        }
     }
 }

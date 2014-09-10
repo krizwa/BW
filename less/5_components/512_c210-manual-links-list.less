@@ -1,7 +1,7 @@
 @import "../1_global/00_required.less";
 
 /* ==========================================================================
-= 12. C210 - Manual Links list IP
+= 12. C210 - Manual Links list 
 ========================================================================== */
 
 .module.links-list {
@@ -121,6 +121,12 @@
 .module.links-list.links-list-snippet-image {
     background: #292929 url(img/legacy-quicklinks-bg.png) repeat-y top left;
     color: #fff;
+    .story & {
+        padding: 0;
+        ul {
+            padding-bottom: 8px;
+        }
+    }
     ul {
         li {
             position: relative;
@@ -179,14 +185,7 @@
         }
     }
 }
-.story {
-    .module.links-list.links-list-snippet-image {
-        padding: 0;
-        ul {
-            padding-bottom: 8px;
-        }
-    }
-}
+
 .cssgradients .module.links-list.links-list-snippet-image, .cssgradients .module.links-list.links-list-quick{
         .gradient (@origin: linear, @start: #5c5c5c, @stop: #292929);
 }
