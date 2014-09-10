@@ -1,56 +1,58 @@
 @import "../1_global/00_required.less";
+
 /* ==========================================================================
-= 4. C201 - Promo IP
+= 4. C201 - Promo 
 ========================================================================== */
-.promo,.quote {
+
+.promo, .quote {
     outline: 0;
     margin: 1px 0 8px 0;
     position: relative;
     text-align: center;
 }
-.promo .promo,.quote .promo {
+.promo .promo, .quote .promo {
     margin: 0;
 }
-.lt-ie9 .promo:hover .add-to-dock,.lt-ie9 .promo:hover .add-to-dock-added,.lt-ie9 .quote:hover .add-to-dock,.lt-ie9 .quote:hover .add-to-dock-added {
+.lt-ie9 .promo:hover .add-to-dock, .lt-ie9 .promo:hover .add-to-dock-added, .lt-ie9 .quote:hover .add-to-dock, .lt-ie9 .quote:hover .add-to-dock-added {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
     opacity: 100;
 }
-.promo .promo-inner,.promo .quote-inner,.quote .promo-inner,.quote .quote-inner {
+.promo .promo-inner, .promo .quote-inner, .quote .promo-inner, .quote .quote-inner {
     display: block;
     outline: 0;
     padding-bottom: 1em;
 }
-.promo .promo-inner:hover,.promo .quote-inner:hover,.quote .promo-inner:hover,.quote .quote-inner:hover {
+.promo .promo-inner:hover, .promo .quote-inner:hover, .quote .promo-inner:hover, .quote .quote-inner:hover {
     text-decoration: none;
 }
-.promo .promo-inner:hover .promo-chevron,.promo .quote-inner:hover .promo-chevron,.quote .promo-inner:hover .promo-chevron,.quote .quote-inner:hover .promo-chevron {
+.promo .promo-inner:hover .promo-chevron, .promo .quote-inner:hover .promo-chevron, .quote .promo-inner:hover .promo-chevron, .quote .quote-inner:hover .promo-chevron {
     background: url(img/quicklinks_chevron.png) center right no-repeat;
     padding-left: 7px;
 }
-.promo .promo-inner:hover figure,.promo .quote-inner:hover figure,.quote .promo-inner:hover figure,.quote .quote-inner:hover figure {
+.promo .promo-inner:hover figure, .promo .quote-inner:hover figure, .quote .promo-inner:hover figure, .quote .quote-inner:hover figure {
     background: url(img/legacy-bg-fff-gradient-85.png) repeat-x bottom left;
 }
-.cssgradients .promo .promo-inner:hover figure,.cssgradients .promo .quote-inner:hover figure,.cssgradients .quote .promo-inner:hover figure,.cssgradients .quote .quote-inner:hover figure {
+.cssgradients .promo .promo-inner:hover figure, .cssgradients .promo .quote-inner:hover figure, .cssgradients .quote .promo-inner:hover figure, .cssgradients .quote .quote-inner:hover figure {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(229, 229, 229, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.85)));
     background-image: -webkit-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: -moz-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: -o-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
 }
-.promo .promo-inner:hover figure img,.promo .quote-inner:hover figure img,.quote .promo-inner:hover figure img,.quote .quote-inner:hover figure img {
+.promo .promo-inner:hover figure img, .promo .quote-inner:hover figure img, .quote .promo-inner:hover figure img, .quote .quote-inner:hover figure img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
     opacity: 0.5;
 }
-.promo .promo-inner:focus,.promo .quote-inner:focus,.quote .promo-inner:focus,.quote .quote-inner:focus {
+.promo .promo-inner:focus, .promo .quote-inner:focus, .quote .promo-inner:focus, .quote .quote-inner:focus {
     -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
     -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
     box-shadow: 0 0 0 1px white, 0 0 0 3px black;
 }
-.lt-ie9 .promo .promo-inner:focus,.lt-ie9 .promo .quote-inner:focus,.lt-ie9 .quote .promo-inner:focus,.lt-ie9 .quote .quote-inner:focus {
+.lt-ie9 .promo .promo-inner:focus, .lt-ie9 .promo .quote-inner:focus, .lt-ie9 .quote .promo-inner:focus, .lt-ie9 .quote .quote-inner:focus {
     outline: 2px solid #000 !important;
     border: 0.1px solid #fff !important;
 }
-.promo h3,.quote h3 {
+.promo h3, .quote h3 {
     font-family: "ExpertSansBold", Helvetica, Arial;
     font-size: 1.16667em;
     letter-spacing: 0.2em;
@@ -58,27 +60,27 @@
     padding: 2.7em 23px 0 23px;
     text-transform: uppercase;
 }
-.lt-ie9 .promo h3,.lt-ie9 .quote h3 {
+.lt-ie9 .promo h3, .lt-ie9 .quote h3 {
     letter-spacing: 0.17em;
 }
-.promo h4,.quote h4 {
+.promo h4, .quote h4 {
     font-family: "ExpertSansRegular", Helvetica, Arial;
     font-size: 1.08333em;
     font-weight: normal;
     letter-spacing: 0.1em;
     margin: 0;
 }
-.promo .add-to-dock,.quote .add-to-dock {
+.promo .add-to-dock, .quote .add-to-dock {
     color: #fff;
     left: 0px;
     position: absolute;
     top: 0px;
 }
-.promo .promo-chevron,.quote .promo-chevron {
+.promo .promo-chevron, .quote .promo-chevron {
     background: transparent;
     padding-left: 7px;
 }
-.promo .cta,.quote .cta {
+.promo .cta, .quote .cta {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -100,18 +102,18 @@
     position: absolute;
     text-transform: uppercase;
 }
-.promo .cta-wrapper,.quote .cta-wrapper {
+.promo .cta-wrapper, .quote .cta-wrapper {
     bottom: 10px;
     padding: 0 10px;
     position: absolute;
     width: 296px;
 }
-.promo .cta-wrapper .cta,.quote .cta-wrapper .cta {
+.promo .cta-wrapper .cta, .quote .cta-wrapper .cta {
     position: relative;
     bottom: 0;
     left: 0;
 }
-.promo .external,.quote .external {
+.promo .external, .quote .external {
     background-image: url(img/external-link.png);
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -122,59 +124,59 @@
     right: 8px;
     width: 26px;
 }
-.promo.promo-bg-color-2 .external,.promo.promo-bg-color-3 .external,.quote.promo-bg-color-2 .external,.quote.promo-bg-color-3 .external {
+.promo.promo-bg-color-2 .external, .promo.promo-bg-color-3 .external, .quote.promo-bg-color-2 .external, .quote.promo-bg-color-3 .external {
     background-image: url(img/external-link-ccc.png);
 }
-.promo.promo-bg-color-1 .external,.quote.promo-bg-color-1 .external {
+.promo.promo-bg-color-1 .external, .quote.promo-bg-color-1 .external {
     background-image: url(img/external-link-999.png);
 }
-.promo.promo-service-carousel .cta-wrapper,.quote.promo-service-carousel .cta-wrapper {
+.promo.promo-service-carousel .cta-wrapper, .quote.promo-service-carousel .cta-wrapper {
     bottom: 21px;
     width: 285px;
 }
-.promo.promo-service-carousel.promo-no-image .cta-wrapper,.promo.promo-service-carousel.promo-no-image-volume .cta-wrapper,.quote.promo-service-carousel.promo-no-image .cta-wrapper,.quote.promo-service-carousel.promo-no-image-volume .cta-wrapper {
+.promo.promo-service-carousel.promo-no-image .cta-wrapper, .promo.promo-service-carousel.promo-no-image-volume .cta-wrapper, .quote.promo-service-carousel.promo-no-image .cta-wrapper, .quote.promo-service-carousel.promo-no-image-volume .cta-wrapper {
     width: 590px;
 }
-.promo.promo-service-landing .cta-wrapper,.quote.promo-service-landing .cta-wrapper {
+.promo.promo-service-landing .cta-wrapper, .quote.promo-service-landing .cta-wrapper {
     bottom: 40px;
 }
-.promo .snippet p,.promo p.snippet,.quote .snippet p,.quote p.snippet {
+.promo .snippet p, .promo p.snippet, .quote .snippet p, .quote p.snippet {
     font-family: "ExpertSansLight", Helvetica, Arial;
     font-size: 1.08333em;
     line-height: 1.5;
     margin-bottom: 0;
     padding: 0 15px;
 }
-.lt-ie9 .promo .snippet p,.lt-ie9 .promo p.snippet,.lt-ie9 .quote .snippet p,.lt-ie9 .quote p.snippet {
+.lt-ie9 .promo .snippet p, .lt-ie9 .promo p.snippet, .lt-ie9 .quote .snippet p, .lt-ie9 .quote p.snippet {
     letter-spacing: 0;
 }
-.promo .promo-snippet-small p,.quote .promo-snippet-small p {
+.promo .promo-snippet-small p, .quote .promo-snippet-small p {
     font-size: 1.08333em !important;
     line-height: 1.5 !important;
 }
-.promo .promo-snippet-large p,.quote .promo-snippet-large p {
+.promo .promo-snippet-large p, .quote .promo-snippet-large p {
     font-size: 2.33333em !important;
     letter-spacing: 0 !important;
     line-height: 1.2 !important;
 }
-.promo .snippet.compliance,.quote .snippet.compliance {
+.promo .snippet.compliance, .quote .snippet.compliance {
     bottom: 0;
     font-size: 1.08333em;
     margin-bottom: 10px;
     padding: 0 8px;
     position: relative;
 }
-.promo .stats,.quote .stats {
+.promo .stats, .quote .stats {
     bottom: 0.5em;
     left: 10px;
     margin: 0;
     padding: 0;
     position: absolute;
 }
-.promo .stats dt,.quote .stats dt {
+.promo .stats dt, .quote .stats dt {
     display: none;
 }
-.promo .stats dd,.quote .stats dd {
+.promo .stats dd, .quote .stats dd {
     display: inline;
     margin: 0;
 }
@@ -183,6 +185,10 @@
     background-image: none !important;
     padding-top: 5px;
     width: 235px;
+    &:hover {
+        background-color: #1c1c1c;
+        width: 235px;
+    }
     .add-to-dock {
         left: 5px;
         top: 5px;
@@ -217,17 +223,13 @@
         padding: 50px 87px;
     }
 }
-.promo-narrow-video.promo-medium.promo-video:hover {
-    background-color: #1c1c1c;
-    width: 235px;
-}
-.promo-no-cta .cta,.promo-no-stats .stats,.promo-no-snippet .snippet,.promo-no-profile-contact .profile-contact,.promo-profile-no-contact .contact-details,.promo-no-profile-contact-details .contact-details,.promo-no-profile-contact .contact-details,.promo-no-external span.external {
+.promo-no-cta .cta, .promo-no-stats .stats, .promo-no-snippet .snippet, .promo-no-profile-contact .profile-contact, .promo-profile-no-contact .contact-details, .promo-no-profile-contact-details .contact-details, .promo-no-profile-contact .contact-details, .promo-no-external span.external {
     display: none;
 }
-.promo-no-image figure,.promo-no-image img {
+.promo-no-image figure, .promo-no-image img {
     display: none;
 }
-.promo-small.promo-no-profile-contact-details .promo-inner,.promo-small.promo-no-profile-contact-details .contact-details .promo-inner,.promo-small.promo-no-profile-contact .promo-inner,.promo-small.promo-no-profile-contact .contact-details .promo-inner,.promo-medium.promo-profile-no-contact .contact-details .promo-inner {
+.promo-small.promo-no-profile-contact-details .promo-inner, .promo-small.promo-no-profile-contact-details .contact-details .promo-inner, .promo-small.promo-no-profile-contact .promo-inner, .promo-small.promo-no-profile-contact .contact-details .promo-inner, .promo-medium.promo-profile-no-contact .contact-details .promo-inner {
     display: none;
 }
 .promo-medium.promo-profile-no-contact {
@@ -235,16 +237,14 @@
         min-height: 0 !important;
         padding-bottom: 0;
     }
-    .copy-wrapper {
-        .promo-inner {
-            min-height: 12em !important;
-        }
+    .copy-wrapper .promo-inner {
+        min-height: 12em !important;
     }
 }
-.promo-small.promo-no-profile-contact-details .copy-wrapper .promo-inner,.promo-small.promo-no-profile-contact .copy-wrapper .promo-inner,.promo-medium.promo-profile-no-contact .copy-wrapper .promo-inner {
+.promo-small.promo-no-profile-contact-details .copy-wrapper .promo-inner, .promo-small.promo-no-profile-contact .copy-wrapper .promo-inner, .promo-medium.promo-profile-no-contact .copy-wrapper .promo-inner {
     display: block !important;
 }
-.promo-small.promo-no-profile-contact-details .copy-wrapper .snippet.compliance,.promo-small.promo-no-profile-contact .copy-wrapper .snippet.compliance,.promo-medium.promo-profile-no-contact .copy-wrapper .snippet.compliance {
+.promo-small.promo-no-profile-contact-details .copy-wrapper .snippet.compliance, .promo-small.promo-no-profile-contact .copy-wrapper .snippet.compliance, .promo-medium.promo-profile-no-contact .copy-wrapper .snippet.compliance {
     bottom: 30px !important;
 }
 .search-results-list {
@@ -269,106 +269,106 @@
         }
     }
 }
-.promo-bg-color-1,.quote-bg-color-1,.promo-bg-color-1.promo-large-wide .copy-wrapper,.promo-service-carousel,.promo-service-carousel .copy-wrapper {
+.promo-bg-color-1, .quote-bg-color-1, .promo-bg-color-1.promo-large-wide .copy-wrapper, .promo-service-carousel, .promo-service-carousel .copy-wrapper {
     background: url(img/legacy-bg-fff-gradient.png) repeat-x bottom left;
 }
-.cssgradients .promo-bg-color-1,.cssgradients .quote-bg-color-1,.cssgradients .promo-bg-color-1.promo-large-wide .copy-wrapper,.cssgradients .promo-service-carousel,.cssgradients .promo-service-carousel .copy-wrapper {
+.cssgradients .promo-bg-color-1, .cssgradients .quote-bg-color-1, .cssgradients .promo-bg-color-1.promo-large-wide .copy-wrapper, .cssgradients .promo-service-carousel, .cssgradients .promo-service-carousel .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5e5e5), color-stop(100%, #ffffff));
     background-image: -webkit-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -moz-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -o-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: linear-gradient(bottom, #e5e5e5, #ffffff);
 }
-.promo-bg-color-1 h3,.promo-bg-color-1 a,.quote-bg-color-1 h3,.quote-bg-color-1 a,.promo-bg-color-1.promo-large-wide .copy-wrapper h3,.promo-bg-color-1.promo-large-wide .copy-wrapper a,.promo-service-carousel h3,.promo-service-carousel a,.promo-service-carousel .copy-wrapper h3,.promo-service-carousel .copy-wrapper a {
+.promo-bg-color-1 h3, .promo-bg-color-1 a, .quote-bg-color-1 h3, .quote-bg-color-1 a, .promo-bg-color-1.promo-large-wide .copy-wrapper h3, .promo-bg-color-1.promo-large-wide .copy-wrapper a, .promo-service-carousel h3, .promo-service-carousel a, .promo-service-carousel .copy-wrapper h3, .promo-service-carousel .copy-wrapper a {
     color: black;
 }
-.promo-bg-color-1 .stats dd,.quote-bg-color-1 .stats dd,.promo-bg-color-1.promo-large-wide .copy-wrapper .stats dd,.promo-service-carousel .stats dd,.promo-service-carousel .copy-wrapper .stats dd {
+.promo-bg-color-1 .stats dd, .quote-bg-color-1 .stats dd, .promo-bg-color-1.promo-large-wide .copy-wrapper .stats dd, .promo-service-carousel .stats dd, .promo-service-carousel .copy-wrapper .stats dd {
     color: black;
 }
-.promo-bg-color-1.promo-bgimage-center .copy-wrapper,.promo-bg-color-1.promo-bgimage-left .copy-wrapper,.promo-bg-color-1.promo-bgimage-right .copy-wrapper,.search-results .promo-bg-color-1 {
+.promo-bg-color-1.promo-bgimage-center .copy-wrapper, .promo-bg-color-1.promo-bgimage-left .copy-wrapper, .promo-bg-color-1.promo-bgimage-right .copy-wrapper, .search-results .promo-bg-color-1 {
     background: url(img/legacy-bg-fff-gradient-85.png) repeat-x bottom left;
 }
-.cssgradients .promo-bg-color-1.promo-bgimage-center .copy-wrapper,.cssgradients .promo-bg-color-1.promo-bgimage-left .copy-wrapper,.cssgradients .promo-bg-color-1.promo-bgimage-right .copy-wrapper,.cssgradients .search-results .promo-bg-color-1 {
+.cssgradients .promo-bg-color-1.promo-bgimage-center .copy-wrapper, .cssgradients .promo-bg-color-1.promo-bgimage-left .copy-wrapper, .cssgradients .promo-bg-color-1.promo-bgimage-right .copy-wrapper, .cssgradients .search-results .promo-bg-color-1 {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(229, 229, 229, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.85)));
     background-image: -webkit-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: -moz-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: -o-linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
     background-image: linear-gradient(bottom, rgba(229, 229, 229, 0.85), rgba(255, 255, 255, 0.85));
 }
-.promo.promo-bg-color-2,.promo.quote-bg-color-2,.promo.promo-bg-color-2.promo-large-wide .copy-wrapper,.quote.promo-bg-color-2,.quote.quote-bg-color-2,.quote.promo-bg-color-2.promo-large-wide .copy-wrapper {
+.promo.promo-bg-color-2, .promo.quote-bg-color-2, .promo.promo-bg-color-2.promo-large-wide .copy-wrapper, .quote.promo-bg-color-2, .quote.quote-bg-color-2, .quote.promo-bg-color-2.promo-large-wide .copy-wrapper {
     background: url(img/legacy-bg-9d063b-gradient.png) repeat-x bottom left;
     color: #fff;
 }
-.cssgradients .promo.promo-bg-color-2,.cssgradients .promo.quote-bg-color-2,.cssgradients .promo.promo-bg-color-2.promo-large-wide .copy-wrapper,.cssgradients .quote.promo-bg-color-2,.cssgradients .quote.quote-bg-color-2,.cssgradients .quote.promo-bg-color-2.promo-large-wide .copy-wrapper {
+.cssgradients .promo.promo-bg-color-2, .cssgradients .promo.quote-bg-color-2, .cssgradients .promo.promo-bg-color-2.promo-large-wide .copy-wrapper, .cssgradients .quote.promo-bg-color-2, .cssgradients .quote.quote-bg-color-2, .cssgradients .quote.promo-bg-color-2.promo-large-wide .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8d0535), color-stop(100%, #9d063b));
     background-image: -webkit-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: -moz-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: -o-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: linear-gradient(bottom, #8d0535, #9d063b);
 }
-.promo.promo-bg-color-2 h3,.promo.promo-bg-color-2 a,.promo.quote-bg-color-2 h3,.promo.quote-bg-color-2 a,.promo.promo-bg-color-2.promo-large-wide .copy-wrapper h3,.promo.promo-bg-color-2.promo-large-wide .copy-wrapper a,.quote.promo-bg-color-2 h3,.quote.promo-bg-color-2 a,.quote.quote-bg-color-2 h3,.quote.quote-bg-color-2 a,.quote.promo-bg-color-2.promo-large-wide .copy-wrapper h3,.quote.promo-bg-color-2.promo-large-wide .copy-wrapper a {
+.promo.promo-bg-color-2 h3, .promo.promo-bg-color-2 a, .promo.quote-bg-color-2 h3, .promo.quote-bg-color-2 a, .promo.promo-bg-color-2.promo-large-wide .copy-wrapper h3, .promo.promo-bg-color-2.promo-large-wide .copy-wrapper a, .quote.promo-bg-color-2 h3, .quote.promo-bg-color-2 a, .quote.quote-bg-color-2 h3, .quote.quote-bg-color-2 a, .quote.promo-bg-color-2.promo-large-wide .copy-wrapper h3, .quote.promo-bg-color-2.promo-large-wide .copy-wrapper a {
     color: #fff;
 }
-.promo.promo-bg-color-2:hover .promo-chevron,.promo.quote-bg-color-2:hover .promo-chevron,.promo.promo-bg-color-2.promo-large-wide .copy-wrapper:hover .promo-chevron,.quote.promo-bg-color-2:hover .promo-chevron,.quote.quote-bg-color-2:hover .promo-chevron,.quote.promo-bg-color-2.promo-large-wide .copy-wrapper:hover .promo-chevron {
+.promo.promo-bg-color-2:hover .promo-chevron, .promo.quote-bg-color-2:hover .promo-chevron, .promo.promo-bg-color-2.promo-large-wide .copy-wrapper:hover .promo-chevron, .quote.promo-bg-color-2:hover .promo-chevron, .quote.quote-bg-color-2:hover .promo-chevron, .quote.promo-bg-color-2.promo-large-wide .copy-wrapper:hover .promo-chevron {
     background: url(img/promo_chevron.png) center right no-repeat;
     padding-left: 7px;
     position: relative;
     top: 1px;
 }
-.promo-bg-color-2.promo-bgimage-center .copy-wrapper,.promo-bg-color-2.promo-bgimage-left .copy-wrapper,.promo-bg-color-2.promo-bgimage-right .copy-wrapper,.search-results .promo-bg-color-2 {
+.promo-bg-color-2.promo-bgimage-center .copy-wrapper, .promo-bg-color-2.promo-bgimage-left .copy-wrapper, .promo-bg-color-2.promo-bgimage-right .copy-wrapper, .search-results .promo-bg-color-2 {
     background: url(img/legacy-bg-9d063b-gradient-85.png) repeat-x bottom left;
 }
-.cssgradients .promo-bg-color-2.promo-bgimage-center .copy-wrapper,.cssgradients .promo-bg-color-2.promo-bgimage-left .copy-wrapper,.cssgradients .promo-bg-color-2.promo-bgimage-right .copy-wrapper,.cssgradients .search-results .promo-bg-color-2 {
+.cssgradients .promo-bg-color-2.promo-bgimage-center .copy-wrapper, .cssgradients .promo-bg-color-2.promo-bgimage-left .copy-wrapper, .cssgradients .promo-bg-color-2.promo-bgimage-right .copy-wrapper, .cssgradients .search-results .promo-bg-color-2 {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(141, 5, 53, 0.85)), color-stop(100%, rgba(157, 6, 59, 0.85)));
     background-image: -webkit-linear-gradient(bottom, rgba(141, 5, 53, 0.85), rgba(157, 6, 59, 0.85));
     background-image: -moz-linear-gradient(bottom, rgba(141, 5, 53, 0.85), rgba(157, 6, 59, 0.85));
     background-image: -o-linear-gradient(bottom, rgba(141, 5, 53, 0.85), rgba(157, 6, 59, 0.85));
     background-image: linear-gradient(bottom, rgba(141, 5, 53, 0.85), rgba(157, 6, 59, 0.85));
 }
-.promo-bg-color-3,.quote-bg-color-3,.promo-bg-color-3.promo-large-wide .copy-wrapper {
+.promo-bg-color-3, .quote-bg-color-3, .promo-bg-color-3.promo-large-wide .copy-wrapper {
     background: url(img/legacy-bg-60564e-gradient.png) repeat-x bottom left;
     color: #fff;
 }
-.cssgradients .promo-bg-color-3,.cssgradients .quote-bg-color-3,.cssgradients .promo-bg-color-3.promo-large-wide .copy-wrapper {
+.cssgradients .promo-bg-color-3, .cssgradients .quote-bg-color-3, .cssgradients .promo-bg-color-3.promo-large-wide .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #4e433a), color-stop(100%, #60564e));
     background-image: -webkit-linear-gradient(bottom, #4e433a, #60564e);
     background-image: -moz-linear-gradient(bottom, #4e433a, #60564e);
     background-image: -o-linear-gradient(bottom, #4e433a, #60564e);
     background-image: linear-gradient(bottom, #4e433a, #60564e);
 }
-.promo-bg-color-3 h3,.promo-bg-color-3 a,.quote-bg-color-3 h3,.quote-bg-color-3 a,.promo-bg-color-3.promo-large-wide .copy-wrapper h3,.promo-bg-color-3.promo-large-wide .copy-wrapper a {
+.promo-bg-color-3 h3, .promo-bg-color-3 a, .quote-bg-color-3 h3, .quote-bg-color-3 a, .promo-bg-color-3.promo-large-wide .copy-wrapper h3, .promo-bg-color-3.promo-large-wide .copy-wrapper a {
     color: #fff;
 }
-.promo-bg-color-3.promo-bgimage-center .copy-wrapper,.promo-bg-color-3.promo-bgimage-left .copy-wrapper,.promo-bg-color-3.promo-bgimage-right .copy-wrapper,.search-results .promo-bg-color-3 {
+.promo-bg-color-3.promo-bgimage-center .copy-wrapper, .promo-bg-color-3.promo-bgimage-left .copy-wrapper, .promo-bg-color-3.promo-bgimage-right .copy-wrapper, .search-results .promo-bg-color-3 {
     background: url(img/legacy-bg-60564e-gradient-85.png) repeat-x bottom left;
 }
-.cssgradients .promo-bg-color-3.promo-bgimage-center .copy-wrapper,.cssgradients .promo-bg-color-3.promo-bgimage-left .copy-wrapper,.cssgradients .promo-bg-color-3.promo-bgimage-right .copy-wrapper,.cssgradients .search-results .promo-bg-color-3 {
+.cssgradients .promo-bg-color-3.promo-bgimage-center .copy-wrapper, .cssgradients .promo-bg-color-3.promo-bgimage-left .copy-wrapper, .cssgradients .promo-bg-color-3.promo-bgimage-right .copy-wrapper, .cssgradients .search-results .promo-bg-color-3 {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(78, 67, 58, 0.85)), color-stop(100%, rgba(96, 86, 78, 0.85)));
     background-image: -webkit-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
     background-image: -moz-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
     background-image: -o-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
     background-image: linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
 }
-.promo-bg-color-4,.quote-bg-color-4,.promo-bg-color-4.promo-large-wide .copy-wrapper {
+.promo-bg-color-4, .quote-bg-color-4, .promo-bg-color-4.promo-large-wide .copy-wrapper {
     background: #333;
     color: #fff;
 }
-.promo-bg-color-4 h3,.promo-bg-color-4 a,.quote-bg-color-4 h3,.quote-bg-color-4 a,.promo-bg-color-4.promo-large-wide .copy-wrapper h3,.promo-bg-color-4.promo-large-wide .copy-wrapper a {
+.promo-bg-color-4 h3, .promo-bg-color-4 a, .quote-bg-color-4 h3, .quote-bg-color-4 a, .promo-bg-color-4.promo-large-wide .copy-wrapper h3, .promo-bg-color-4.promo-large-wide .copy-wrapper a {
     color: #fff;
 }
-.promo-bg-color-4.promo-bgimage-center .copy-wrapper,.promo-bg-color-4.promo-bgimage-left .copy-wrapper,.promo-bg-color-4.promo-bgimage-right .copy-wrapper,.search-results .promo-bg-color-4 {
+.promo-bg-color-4.promo-bgimage-center .copy-wrapper, .promo-bg-color-4.promo-bgimage-left .copy-wrapper, .promo-bg-color-4.promo-bgimage-right .copy-wrapper, .search-results .promo-bg-color-4 {
     background: url(img/legacy-bg-000000-85.png) repeat;
 }
-.rgba .promo-bg-color-4.promo-bgimage-center .copy-wrapper,.rgba .promo-bg-color-4.promo-bgimage-left .copy-wrapper,.rgba .promo-bg-color-4.promo-bgimage-right .copy-wrapper,.rgba .search-results .promo-bg-color-4 {
+.rgba .promo-bg-color-4.promo-bgimage-center .copy-wrapper, .rgba .promo-bg-color-4.promo-bgimage-left .copy-wrapper, .rgba .promo-bg-color-4.promo-bgimage-right .copy-wrapper, .rgba .search-results .promo-bg-color-4 {
     background: rgba(51, 51, 51, 0.85);
 }
-.promo-bg-color-5,.quote-bg-color-5,.promo-bg-color-5.promo-large-wide .copy-wrapper {
+.promo-bg-color-5, .quote-bg-color-5, .promo-bg-color-5.promo-large-wide .copy-wrapper {
     background: #EBEBEB;
 }
-.promo-bg-color-5.promo-bgimage-center .copy-wrapper,.promo-bg-color-5.promo-bgimage-left .copy-wrapper,.promo-bg-color-5.promo-bgimage-right .copy-wrapper,.search-results .promo-bg-color-5 {
+.promo-bg-color-5.promo-bgimage-center .copy-wrapper, .promo-bg-color-5.promo-bgimage-left .copy-wrapper, .promo-bg-color-5.promo-bgimage-right .copy-wrapper, .search-results .promo-bg-color-5 {
     background: url(img/legacy-bg-ebebeb-85.png) repeat;
 }
-.rgba .promo-bg-color-5.promo-bgimage-center .copy-wrapper,.rgba .promo-bg-color-5.promo-bgimage-left .copy-wrapper,.rgba .promo-bg-color-5.promo-bgimage-right .copy-wrapper,.rgba .search-results .promo-bg-color-5 {
+.rgba .promo-bg-color-5.promo-bgimage-center .copy-wrapper, .rgba .promo-bg-color-5.promo-bgimage-left .copy-wrapper, .rgba .promo-bg-color-5.promo-bgimage-right .copy-wrapper, .rgba .search-results .promo-bg-color-5 {
     background: rgba(235, 235, 235, 0.85);
 }
 div.promo.promo-bg-color-1:hover {
@@ -391,7 +391,7 @@ div.promo.promo-bg-color-3:hover {
 div.promo.promo-bg-color-4:hover {
     background: #3d3d3d;
 }
-.promo-bgimage-center h3,.promo-bgimage-left h3,.promo-bgimage-right h3,.promo-image h3 {
+.promo-bgimage-center h3, .promo-bgimage-left h3, .promo-bgimage-right h3, .promo-image h3 {
     padding-bottom: 0.6em;
     padding-top: 1.4em;
 }
@@ -400,26 +400,26 @@ div.promo.promo-bg-color-4:hover {
         opacity: 0.67;
     }
 }
-.promo-bgimage-center,.promo-bgimage-left,.promo-bgimage-right {
+.promo-bgimage-center, .promo-bgimage-left, .promo-bgimage-right {
     background: #fff;
     overflow: hidden;
 }
-.promo-bgimage-center img,.promo-bgimage-left img,.promo-bgimage-right img {
+.promo-bgimage-center img, .promo-bgimage-left img, .promo-bgimage-right img {
     left: 0px;
     position: absolute;
     top: 0px;
     z-index: 1;
 }
-.promo-bgimage-center .add-to-dock,.promo-bgimage-left .add-to-dock,.promo-bgimage-right .add-to-dock {
+.promo-bgimage-center .add-to-dock, .promo-bgimage-left .add-to-dock, .promo-bgimage-right .add-to-dock {
     z-index: 2;
 }
-.promo-bgimage-center.promo-medium .promo-inner,.promo-bgimage-left.promo-medium .promo-inner,.promo-bgimage-right.promo-medium .promo-inner {
+.promo-bgimage-center.promo-medium .promo-inner, .promo-bgimage-left.promo-medium .promo-inner, .promo-bgimage-right.promo-medium .promo-inner {
     min-height: 30em;
 }
-.promo-bgimage-center.promo-medium .promo-inner:hover,.promo-bgimage-left.promo-medium .promo-inner:hover,.promo-bgimage-right.promo-medium .promo-inner:hover {
+.promo-bgimage-center.promo-medium .promo-inner:hover, .promo-bgimage-left.promo-medium .promo-inner:hover, .promo-bgimage-right.promo-medium .promo-inner:hover {
     min-height: 30em;
 }
-.promo-bgimage-center .copy-wrapper,.promo-bgimage-left .copy-wrapper,.promo-bgimage-right .copy-wrapper {
+.promo-bgimage-center .copy-wrapper, .promo-bgimage-left .copy-wrapper, .promo-bgimage-right .copy-wrapper {
     bottom: 0px;
     min-height: 12.917em;
     left: 0px;
@@ -437,13 +437,13 @@ div.promo.promo-bg-color-4:hover {
         padding: 2.7em 23px 0 23px;
     }
 }
-.promo-medium,.quote {
+.promo-medium, .quote {
     width: 316px;
 }
-.promo-medium .promo-inner,.quote .promo-inner {
+.promo-medium .promo-inner, .quote .promo-inner {
     min-height: 25.5em;
 }
-.promo-medium .quote-inner,.quote .quote-inner {
+.promo-medium .quote-inner, .quote .quote-inner {
     min-height: 6em;
 }
 .promo-large {
@@ -462,21 +462,16 @@ div.promo.promo-bg-color-4:hover {
         bottom: -30px;
     }
 }
-.promo-small-wide,.quote-wide {
+.promo-small-wide, .quote-wide {
     width: 640px;
 }
-.promo-small-wide .promo-inner,.promo-small-wide .quote-inner,.quote-wide .promo-inner,.quote-wide .quote-inner {
+.promo-small-wide .promo-inner, .promo-small-wide .quote-inner, .quote-wide .promo-inner, .quote-wide .quote-inner {
     min-height: 12.917em;
 }
 .promo-medium-wide {
     width: 640px;
     .promo-inner {
         min-height: 25.5em;
-    }
-    .snippet {
-        p {
-            padding: 48px 105px;
-        }
     }
 }
 .promo-large-wide {
@@ -506,25 +501,28 @@ div.promo.promo-bg-color-4:hover {
         bottom: 0;
     }
 }
-.promo-medium.promo-no-image .snippet p,.promo-medium.promo-no-image p.snippet,.promo-small-wide .snippet p,.promo-small-wide p.snippet,.promo-medium-wide .snippet p,.promo-medium-wide p.snippet,.quote .snippet p,.quote p.snippet {
+.promo-medium.promo-no-image .snippet p, .promo-medium.promo-no-image p.snippet, .promo-small-wide .snippet p, .promo-small-wide p.snippet, .promo-medium-wide .snippet p, .promo-medium-wide p.snippet, .quote .snippet p, .quote p.snippet {
     font-size: 2.33333em;
     line-height: 1.2;
     margin-bottom: 1.2em;
     padding: 0 30px;
 }
-.promo-medium.promo-no-image .snippet p.promo-snippet-small,.promo-medium.promo-no-image p.snippet.promo-snippet-small,.promo-small-wide .snippet p.promo-snippet-small,.promo-small-wide p.snippet.promo-snippet-small,.promo-medium-wide .snippet p.promo-snippet-small,.promo-medium-wide p.snippet.promo-snippet-small,.quote .snippet p.promo-snippet-small,.quote p.snippet.promo-snippet-small {
+.promo-medium.promo-no-image .snippet p.promo-snippet-small, .promo-medium.promo-no-image p.snippet.promo-snippet-small, .promo-small-wide .snippet p.promo-snippet-small, .promo-small-wide p.snippet.promo-snippet-small, .promo-medium-wide .snippet p.promo-snippet-small, .promo-medium-wide p.snippet.promo-snippet-small, .quote .snippet p.promo-snippet-small, .quote p.snippet.promo-snippet-small {
     font-size: 1.08333em;
 }
-.promo-medium.promo-no-image .snippet p.compliance,.promo-medium.promo-no-image p.snippet.compliance,.promo-small-wide .snippet p.compliance,.promo-small-wide p.snippet.compliance,.promo-medium-wide .snippet p.compliance,.promo-medium-wide p.snippet.compliance,.quote .snippet p.compliance,.quote p.snippet.compliance {
+.promo-medium.promo-no-image .snippet p.compliance, .promo-medium.promo-no-image p.snippet.compliance, .promo-small-wide .snippet p.compliance, .promo-small-wide p.snippet.compliance, .promo-medium-wide .snippet p.compliance, .promo-medium-wide p.snippet.compliance, .quote .snippet p.compliance, .quote p.snippet.compliance {
     font-size: 1.08333em;
     padding: 0 8px;
 }
-.promo {
-    .collection {
-        display: none;
-    }
+.promo-medium-wide .snippet p {
+    padding: 48px 105px;
 }
-.promo-insight .collection,.promo-medium.promo-insight .collection {
+/* content type variations */
+
+.promo .collection {
+    display: none;
+}
+.promo-insight .collection, .promo-medium.promo-insight .collection {
     display: block;
     font-family: "ExpertSansBold", Helvetica, Arial;
     font-size: 1.16667em;
@@ -534,7 +532,7 @@ div.promo.promo-bg-color-4:hover {
     padding: 2em 24px 0 24px;
     text-transform: uppercase;
 }
-.promo-insight h3,.promo-medium.promo-insight h3 {
+.promo-insight h3, .promo-medium.promo-insight h3 {
     font-family: "ExpertSansRegular", Helvetica, Arial;
     font-size: 1.16667em;
     line-height: 1.2;
@@ -544,15 +542,17 @@ div.promo.promo-bg-color-4:hover {
     padding-bottom: 0.6em;
     padding-top: 1.4em;
 }
-.promo-insight h3 .promo-chevron,.promo-medium.promo-insight h3 .promo-chevron {
+.promo-insight h3 .promo-chevron, .promo-medium.promo-insight h3 .promo-chevron {
     display: none;
 }
-.promo-insight .snippet p,.promo-insight p.snippet,.promo-medium.promo-insight .snippet p,.promo-medium.promo-insight p.snippet {
+.promo-insight .snippet p, .promo-insight p.snippet, .promo-medium.promo-insight .snippet p, .promo-medium.promo-insight p.snippet {
     font-family: "ExpertSansLight", Helvetica, Arial;
     font-size: 1.08333em;
     line-height: 1.5;
     padding: 0 16px;
 }
+/* video */
+
 .promo-video {
     .icon-video {
         left: 0px;
@@ -565,113 +565,115 @@ div.promo.promo-bg-color-4:hover {
         opacity: 1;
     }
 }
-.search-results-list &>.promo,.search-results-list &>.quote,.list &>.promo,.list &>.quote {
+/* search list view */
+
+.search-results-list &>.promo, .search-results-list &>.quote, .list &>.promo, .list &>.quote {
     background: url(img/legacy-bg-fff-gradient.png) repeat-x bottom left;
     margin-bottom: 1px;
     text-align: left;
     width: 640px;
 }
-.cssgradients .search-results-list &>.promo,.cssgradients .search-results-list &>.quote,.cssgradients .list &>.promo,.cssgradients .list &>.quote {
+.cssgradients .search-results-list &>.promo, .cssgradients .search-results-list &>.quote, .cssgradients .list &>.promo, .cssgradients .list &>.quote {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5e5e5), color-stop(100%, #ffffff));
     background-image: -webkit-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -moz-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -o-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: linear-gradient(bottom, #e5e5e5, #ffffff);
 }
-.search-results-list &>.promo.promo-bg-color-1:hover,.search-results-list &>.promo.promo-bg-color-2:hover,.search-results-list &>.promo.promo-bg-color-3:hover,.search-results-list &>.promo.promo-bg-color-4:hover,.search-results-list &>.promo.promo-bg-color-5:hover,.search-results-list &>.quote.promo-bg-color-1:hover,.search-results-list &>.quote.promo-bg-color-2:hover,.search-results-list &>.quote.promo-bg-color-3:hover,.search-results-list &>.quote.promo-bg-color-4:hover,.search-results-list &>.quote.promo-bg-color-5:hover,.list &>.promo.promo-bg-color-1:hover,.list &>.promo.promo-bg-color-2:hover,.list &>.promo.promo-bg-color-3:hover,.list &>.promo.promo-bg-color-4:hover,.list &>.promo.promo-bg-color-5:hover,.list &>.quote.promo-bg-color-1:hover,.list &>.quote.promo-bg-color-2:hover,.list &>.quote.promo-bg-color-3:hover,.list &>.quote.promo-bg-color-4:hover,.list &>.quote.promo-bg-color-5:hover {
+.search-results-list &>.promo.promo-bg-color-1:hover, .search-results-list &>.promo.promo-bg-color-2:hover, .search-results-list &>.promo.promo-bg-color-3:hover, .search-results-list &>.promo.promo-bg-color-4:hover, .search-results-list &>.promo.promo-bg-color-5:hover, .search-results-list &>.quote.promo-bg-color-1:hover, .search-results-list &>.quote.promo-bg-color-2:hover, .search-results-list &>.quote.promo-bg-color-3:hover, .search-results-list &>.quote.promo-bg-color-4:hover, .search-results-list &>.quote.promo-bg-color-5:hover, .list &>.promo.promo-bg-color-1:hover, .list &>.promo.promo-bg-color-2:hover, .list &>.promo.promo-bg-color-3:hover, .list &>.promo.promo-bg-color-4:hover, .list &>.promo.promo-bg-color-5:hover, .list &>.quote.promo-bg-color-1:hover, .list &>.quote.promo-bg-color-2:hover, .list &>.quote.promo-bg-color-3:hover, .list &>.quote.promo-bg-color-4:hover, .list &>.quote.promo-bg-color-5:hover {
     background: #f4f4f4;
 }
-.search-results-list &>.promo .promo-inner,.search-results-list &>.promo .quote-inner,.search-results-list &>.quote .promo-inner,.search-results-list &>.quote .quote-inner,.list &>.promo .promo-inner,.list &>.promo .quote-inner,.list &>.quote .promo-inner,.list &>.quote .quote-inner {
+.search-results-list &>.promo .promo-inner, .search-results-list &>.promo .quote-inner, .search-results-list &>.quote .promo-inner, .search-results-list &>.quote .quote-inner, .list &>.promo .promo-inner, .list &>.promo .quote-inner, .list &>.quote .promo-inner, .list &>.quote .quote-inner {
     min-height: 11.167em;
     padding-bottom: 3.5em;
 }
-.search-results-list &>.promo h3,.search-results-list &>.promo a,.search-results-list &>.quote h3,.search-results-list &>.quote a,.list &>.promo h3,.list &>.promo a,.list &>.quote h3,.list &>.quote a {
+.search-results-list &>.promo h3, .search-results-list &>.promo a, .search-results-list &>.quote h3, .search-results-list &>.quote a, .list &>.promo h3, .list &>.promo a, .list &>.quote h3, .list &>.quote a {
     color: black;
 }
-.search-results-list &>.promo h3,.search-results-list &>.promo h4,.search-results-list &>.quote h3,.search-results-list &>.quote h4,.list &>.promo h3,.list &>.promo h4,.list &>.quote h3,.list &>.quote h4 {
+.search-results-list &>.promo h3, .search-results-list &>.promo h4, .search-results-list &>.quote h3, .search-results-list &>.quote h4, .list &>.promo h3, .list &>.promo h4, .list &>.quote h3, .list &>.quote h4 {
     padding-left: 40px;
     padding-right: 35px;
     padding-top: 40px;
 }
-.search-results-list &>.promo h4,.search-results-list &>.quote h4,.list &>.promo h4,.list &>.quote h4 {
+.search-results-list &>.promo h4, .search-results-list &>.quote h4, .list &>.promo h4, .list &>.quote h4 {
     padding-top: 0;
 }
-.search-results-list &>.promo img,.search-results-list &>.quote img,.list &>.promo img,.list &>.quote img {
+.search-results-list &>.promo img, .search-results-list &>.quote img, .list &>.promo img, .list &>.quote img {
     display: none;
 }
-.search-results-list &>.promo .add-to-dock,.search-results-list &>.quote .add-to-dock,.list &>.promo .add-to-dock,.list &>.quote .add-to-dock {
+.search-results-list &>.promo .add-to-dock, .search-results-list &>.quote .add-to-dock, .list &>.promo .add-to-dock, .list &>.quote .add-to-dock {
     color: #fff;
 }
-.search-results-list &>.promo .snippet p,.search-results-list &>.quote .snippet p,.list &>.promo .snippet p,.list &>.quote .snippet p {
+.search-results-list &>.promo .snippet p, .search-results-list &>.quote .snippet p, .list &>.promo .snippet p, .list &>.quote .snippet p {
     font-size: 1.08333em;
     padding-left: 40px;
     padding-right: 35px;
 }
-.search-results-list &>.promo .stats,.search-results-list &>.quote .stats,.list &>.promo .stats,.list &>.quote .stats {
+.search-results-list &>.promo .stats, .search-results-list &>.quote .stats, .list &>.promo .stats, .list &>.quote .stats {
     bottom: 1em;
     left: 40px;
 }
-.search-results-list &>.promo .cta,.search-results-list &>.quote .cta,.list &>.promo .cta,.list &>.quote .cta {
+.search-results-list &>.promo .cta, .search-results-list &>.quote .cta, .list &>.promo .cta, .list &>.quote .cta {
     bottom: 1em;
     left: 40px;
 }
-.search-results-list &>.promo.promo-insight .promo-inner,.search-results-list &>.quote.promo-insight .promo-inner,.list &>.promo.promo-insight .promo-inner,.list &>.quote.promo-insight .promo-inner {
+.search-results-list &>.promo.promo-insight .promo-inner, .search-results-list &>.quote.promo-insight .promo-inner, .list &>.promo.promo-insight .promo-inner, .list &>.quote.promo-insight .promo-inner {
     padding-left: 40px;
 }
-.search-results-list &>.promo.promo-insight .promo-inner .collection,.search-results-list &>.quote.promo-insight .promo-inner .collection,.list &>.promo.promo-insight .promo-inner .collection,.list &>.quote.promo-insight .promo-inner .collection {
+.search-results-list &>.promo.promo-insight .promo-inner .collection, .search-results-list &>.quote.promo-insight .promo-inner .collection, .list &>.promo.promo-insight .promo-inner .collection, .list &>.quote.promo-insight .promo-inner .collection {
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 35px;
     padding-top: 40px;
 }
-.search-results-list &>.promo.promo-insight .promo-inner h3,.search-results-list &>.quote.promo-insight .promo-inner h3,.list &>.promo.promo-insight .promo-inner h3,.list &>.quote.promo-insight .promo-inner h3 {
+.search-results-list &>.promo.promo-insight .promo-inner h3, .search-results-list &>.quote.promo-insight .promo-inner h3, .list &>.promo.promo-insight .promo-inner h3, .list &>.quote.promo-insight .promo-inner h3 {
     font-size: 1.58333em;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-top: 0;
 }
-.search-results-list &>.promo.promo-insight .promo-inner .snippet p,.search-results-list &>.quote.promo-insight .promo-inner .snippet p,.list &>.promo.promo-insight .promo-inner .snippet p,.list &>.quote.promo-insight .promo-inner .snippet p {
+.search-results-list &>.promo.promo-insight .promo-inner .snippet p, .search-results-list &>.quote.promo-insight .promo-inner .snippet p, .list &>.promo.promo-insight .promo-inner .snippet p, .list &>.quote.promo-insight .promo-inner .snippet p {
     padding-left: 0;
     padding-top: 20px;
 }
-.search-results-list &>.promo.promo-office h3,.search-results-list &>.quote.promo-office h3,.list &>.promo.promo-office h3,.list &>.quote.promo-office h3 {
+.search-results-list &>.promo.promo-office h3, .search-results-list &>.quote.promo-office h3, .list &>.promo.promo-office h3, .list &>.quote.promo-office h3 {
     font-size: 1.58333em;
     letter-spacing: 0.1em;
     text-transform: none;
 }
-.search-results-list &>.promo.promo-profile h4,.search-results-list &>.quote.promo-profile h4,.list &>.promo.promo-profile h4,.list &>.quote.promo-profile h4 {
+.search-results-list &>.promo.promo-profile h4, .search-results-list &>.quote.promo-profile h4, .list &>.promo.promo-profile h4, .list &>.quote.promo-profile h4 {
     font-size: 1.58333em;
 }
-.search-results-list &>.promo.promo-profile-contact ul.contact-details,.search-results-list &>.quote.promo-profile-contact ul.contact-details,.list &>.promo.promo-profile-contact ul.contact-details,.list &>.quote.promo-profile-contact ul.contact-details {
+.search-results-list &>.promo.promo-profile-contact ul.contact-details, .search-results-list &>.quote.promo-profile-contact ul.contact-details, .list &>.promo.promo-profile-contact ul.contact-details, .list &>.quote.promo-profile-contact ul.contact-details {
     list-style: none;
     position: relative;
     top: 56px;
     width: 100%;
 }
-.search-results-list &>.promo.promo-profile-contact ul.contact-details strong,.search-results-list &>.quote.promo-profile-contact ul.contact-details strong,.list &>.promo.promo-profile-contact ul.contact-details strong,.list &>.quote.promo-profile-contact ul.contact-details strong {
+.search-results-list &>.promo.promo-profile-contact ul.contact-details strong, .search-results-list &>.quote.promo-profile-contact ul.contact-details strong, .list &>.promo.promo-profile-contact ul.contact-details strong, .list &>.quote.promo-profile-contact ul.contact-details strong {
     text-align: left;
     width: 60px;
 }
-.search-results-list &>.promo.promo-profile-contact ul.contact-details a.promo-profile-email,.search-results-list &>.quote.promo-profile-contact ul.contact-details a.promo-profile-email,.list &>.promo.promo-profile-contact ul.contact-details a.promo-profile-email,.list &>.quote.promo-profile-contact ul.contact-details a.promo-profile-email {
+.search-results-list &>.promo.promo-profile-contact ul.contact-details a.promo-profile-email, .search-results-list &>.quote.promo-profile-contact ul.contact-details a.promo-profile-email, .list &>.promo.promo-profile-contact ul.contact-details a.promo-profile-email, .list &>.quote.promo-profile-contact ul.contact-details a.promo-profile-email {
     float: left;
     left: -20px;
     position: relative;
     top: 0;
 }
-.promo-service-carousel,.promo-service-category,.promo-service-landing {
+.promo-service-carousel, .promo-service-category, .promo-service-landing {
     min-height: 17.584em;
     overflow: hidden;
     position: relative;
     width: 640px;
 }
-.promo-service-carousel img,.promo-service-category img,.promo-service-landing img {
+.promo-service-carousel img, .promo-service-category img, .promo-service-landing img {
     left: 0px;
     position: absolute;
     top: 0px;
     z-index: 1;
 }
-.promo-service-carousel .copy-wrapper,.promo-service-category .copy-wrapper,.promo-service-landing .copy-wrapper {
+.promo-service-carousel .copy-wrapper, .promo-service-category .copy-wrapper, .promo-service-landing .copy-wrapper {
     top: 0px;
     position: absolute;
     right: 0px;
@@ -679,70 +681,70 @@ div.promo.promo-bg-color-4:hover {
     width: 50%;
     z-index: 2;
 }
-.promo-service-carousel .add-to-dock,.promo-service-category .add-to-dock,.promo-service-landing .add-to-dock {
+.promo-service-carousel .add-to-dock, .promo-service-category .add-to-dock, .promo-service-landing .add-to-dock {
     z-index: 2;
 }
-.promo-service-carousel.promo-image-right .copy-wrapper,.promo-service-category.promo-image-right .copy-wrapper,.promo-service-landing.promo-image-right .copy-wrapper {
+.promo-service-carousel.promo-image-right .copy-wrapper, .promo-service-category.promo-image-right .copy-wrapper, .promo-service-landing.promo-image-right .copy-wrapper {
     left: 0px;
 }
-.promo-service-carousel.promo-no-image .copy-wrapper,.promo-service-carousel.promo-no-image-volume .copy-wrapper,.promo-service-category.promo-no-image .copy-wrapper,.promo-service-category.promo-no-image-volume .copy-wrapper,.promo-service-landing.promo-no-image .copy-wrapper,.promo-service-landing.promo-no-image-volume .copy-wrapper {
+.promo-service-carousel.promo-no-image .copy-wrapper, .promo-service-carousel.promo-no-image-volume .copy-wrapper, .promo-service-category.promo-no-image .copy-wrapper, .promo-service-category.promo-no-image-volume .copy-wrapper, .promo-service-landing.promo-no-image .copy-wrapper, .promo-service-landing.promo-no-image-volume .copy-wrapper {
     width: 100%;
 }
-.promo-service-carousel.promo-no-image-volume h3,.promo-service-carousel.promo-no-image-volume h4,.promo-service-carousel.promo-image-volume h3,.promo-service-carousel.promo-image-volume h4,.promo-service-category.promo-no-image-volume h3,.promo-service-category.promo-no-image-volume h4,.promo-service-category.promo-image-volume h3,.promo-service-category.promo-image-volume h4,.promo-service-landing.promo-no-image-volume h3,.promo-service-landing.promo-no-image-volume h4,.promo-service-landing.promo-image-volume h3,.promo-service-landing.promo-image-volume h4 {
+.promo-service-carousel.promo-no-image-volume h3, .promo-service-carousel.promo-no-image-volume h4, .promo-service-carousel.promo-image-volume h3, .promo-service-carousel.promo-image-volume h4, .promo-service-category.promo-no-image-volume h3, .promo-service-category.promo-no-image-volume h4, .promo-service-category.promo-image-volume h3, .promo-service-category.promo-image-volume h4, .promo-service-landing.promo-no-image-volume h3, .promo-service-landing.promo-no-image-volume h4, .promo-service-landing.promo-image-volume h3, .promo-service-landing.promo-image-volume h4 {
     font-family: "ExpertSansRegular", Helvetica, Arial;
     font-size: 1em;
     font-weight: normal;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-.promo-service-carousel.promo-no-image-volume h3,.promo-service-carousel.promo-image-volume h3,.promo-service-category.promo-no-image-volume h3,.promo-service-category.promo-image-volume h3,.promo-service-landing.promo-no-image-volume h3,.promo-service-landing.promo-image-volume h3 {
+.promo-service-carousel.promo-no-image-volume h3, .promo-service-carousel.promo-image-volume h3, .promo-service-category.promo-no-image-volume h3, .promo-service-category.promo-image-volume h3, .promo-service-landing.promo-no-image-volume h3, .promo-service-landing.promo-image-volume h3 {
     color: #007eb6;
     padding-top: 1.7em;
     margin-bottom: 6px;
 }
-.promo-service-carousel.promo-no-image-volume h4,.promo-service-carousel.promo-image-volume h4,.promo-service-category.promo-no-image-volume h4,.promo-service-category.promo-image-volume h4,.promo-service-landing.promo-no-image-volume h4,.promo-service-landing.promo-image-volume h4 {
+.promo-service-carousel.promo-no-image-volume h4, .promo-service-carousel.promo-image-volume h4, .promo-service-category.promo-no-image-volume h4, .promo-service-category.promo-image-volume h4, .promo-service-landing.promo-no-image-volume h4, .promo-service-landing.promo-image-volume h4 {
     line-height: 1.2;
     padding: 0 24px 0 24px;
     margin-top: 0;
     margin-bottom: 0.9em;
 }
-.promo-service-carousel.promo-bg-color-2 .copy-wrapper,.promo-service-category.promo-bg-color-2 .copy-wrapper,.promo-service-landing.promo-bg-color-2 .copy-wrapper {
+.promo-service-carousel.promo-bg-color-2 .copy-wrapper, .promo-service-category.promo-bg-color-2 .copy-wrapper, .promo-service-landing.promo-bg-color-2 .copy-wrapper {
     background: url(img/legacy-bg-9d063b-gradient.png) repeat-x bottom left;
 }
-.cssgradients .promo-service-carousel.promo-bg-color-2 .copy-wrapper,.cssgradients .promo-service-category.promo-bg-color-2 .copy-wrapper,.cssgradients .promo-service-landing.promo-bg-color-2 .copy-wrapper {
+.cssgradients .promo-service-carousel.promo-bg-color-2 .copy-wrapper, .cssgradients .promo-service-category.promo-bg-color-2 .copy-wrapper, .cssgradients .promo-service-landing.promo-bg-color-2 .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8d0535), color-stop(100%, #9d063b));
     background-image: -webkit-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: -moz-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: -o-linear-gradient(bottom, #8d0535, #9d063b);
     background-image: linear-gradient(bottom, #8d0535, #9d063b);
 }
-.promo-service-carousel.promo-bg-color-3 .copy-wrapper,.promo-service-category.promo-bg-color-3 .copy-wrapper,.promo-service-landing.promo-bg-color-3 .copy-wrapper {
+.promo-service-carousel.promo-bg-color-3 .copy-wrapper, .promo-service-category.promo-bg-color-3 .copy-wrapper, .promo-service-landing.promo-bg-color-3 .copy-wrapper {
     background: url(img/legacy-bg-60564e-gradient.png) repeat-x bottom left;
 }
-.cssgradients .promo-service-carousel.promo-bg-color-3 .copy-wrapper,.cssgradients .promo-service-category.promo-bg-color-3 .copy-wrapper,.cssgradients .promo-service-landing.promo-bg-color-3 .copy-wrapper {
+.cssgradients .promo-service-carousel.promo-bg-color-3 .copy-wrapper, .cssgradients .promo-service-category.promo-bg-color-3 .copy-wrapper, .cssgradients .promo-service-landing.promo-bg-color-3 .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #4e433a), color-stop(100%, #60564e));
     background-image: -webkit-linear-gradient(bottom, #4e433a, #60564e);
     background-image: -moz-linear-gradient(bottom, #4e433a, #60564e);
     background-image: -o-linear-gradient(bottom, #4e433a, #60564e);
     background-image: linear-gradient(bottom, #4e433a, #60564e);
 }
-.promo-service-carousel.promo-bg-color-3:hover,.promo-service-category.promo-bg-color-3:hover,.promo-service-landing.promo-bg-color-3:hover {
+.promo-service-carousel.promo-bg-color-3:hover, .promo-service-category.promo-bg-color-3:hover, .promo-service-landing.promo-bg-color-3:hover {
     background: #f4f4f4 !important;
 }
-.promo-service-carousel.promo-bg-color-3:hover .copy-wrapper,.promo-service-category.promo-bg-color-3:hover .copy-wrapper,.promo-service-landing.promo-bg-color-3:hover .copy-wrapper {
+.promo-service-carousel.promo-bg-color-3:hover .copy-wrapper, .promo-service-category.promo-bg-color-3:hover .copy-wrapper, .promo-service-landing.promo-bg-color-3:hover .copy-wrapper {
     background: #3d352f;
 }
-.promo-service-carousel.promo-bg-color-1 .copy-wrapper,.promo-service-category.promo-bg-color-1 .copy-wrapper,.promo-service-landing.promo-bg-color-1 .copy-wrapper {
+.promo-service-carousel.promo-bg-color-1 .copy-wrapper, .promo-service-category.promo-bg-color-1 .copy-wrapper, .promo-service-landing.promo-bg-color-1 .copy-wrapper {
     background: url(img/legacy-bg-fff-gradient.png) repeat-x bottom left;
 }
-.cssgradients .promo-service-carousel.promo-bg-color-1 .copy-wrapper,.cssgradients .promo-service-category.promo-bg-color-1 .copy-wrapper,.cssgradients .promo-service-landing.promo-bg-color-1 .copy-wrapper {
+.cssgradients .promo-service-carousel.promo-bg-color-1 .copy-wrapper, .cssgradients .promo-service-category.promo-bg-color-1 .copy-wrapper, .cssgradients .promo-service-landing.promo-bg-color-1 .copy-wrapper {
     background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5e5e5), color-stop(100%, #ffffff));
     background-image: -webkit-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -moz-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: -o-linear-gradient(bottom, #e5e5e5, #ffffff);
     background-image: linear-gradient(bottom, #e5e5e5, #ffffff);
 }
-.promo-service-carousel.promo-bg-color-1:hover .copy-wrapper,.promo-service-category.promo-bg-color-1:hover .copy-wrapper,.promo-service-landing.promo-bg-color-1:hover .copy-wrapper {
+.promo-service-carousel.promo-bg-color-1:hover .copy-wrapper, .promo-service-category.promo-bg-color-1:hover .copy-wrapper, .promo-service-landing.promo-bg-color-1:hover .copy-wrapper {
     background: #f4f4f4 !important;
 }
 .promo-service-landing {
@@ -768,11 +770,6 @@ div.promo.promo-bg-color-4:hover {
     .promo-service-carousel {
         h3 {
             letter-spacing: 0;
-        }
-    }
-    .promo.promo-medium.promo-profile-contact {
-        a.promo-profile-email {
-            left: 107px;
         }
     }
 }
@@ -896,20 +893,17 @@ div.promo.promo-bg-color-4:hover {
         top: 0;
     }
 }
-.lt-ie8.lt-ie9 {
-    .promo.promo-profile-contact {
-        .snippet {
-            p {
-                position: relative;
-                a.promo-profile-email {
-                    top: -13px;
-                    left: -50px;
-                }
-            }
-        }
+.lt-ie9 .promo.promo-medium.promo-profile-contact a.promo-profile-email {
+    left: 107px;
+}
+.lt-ie8.lt-ie9 .promo.promo-profile-contact .snippet p {
+    position: relative;
+    a.promo-profile-email {
+        top: -13px;
+        left: -50px;
     }
 }
-.lt-ie9 .promo.promo-profile-contact .snippet p a.promo-profile-email,.ie9 .promo.promo-profile-contact .snippet p a.promo-profile-email {
+.lt-ie9 .promo.promo-profile-contact .snippet p a.promo-profile-email, .ie9 .promo.promo-profile-contact .snippet p a.promo-profile-email {
     top: 0;
     left: 0;
 }

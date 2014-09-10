@@ -16,9 +16,23 @@
         margin-bottom: 12px;
     }
 }
+
 .module.links-list.basic-links-list {
     background: transparent;
     margin-left: 8px;
+    .service-category & {
+        background: #f5f5f5;
+    }
+    .rgba .service-category & {
+        background: #f5f5f5;
+    }
+    .rgba & {
+        background: transparent;
+
+    }
+    &:first-child {
+        margin-left: 0;
+    }
     h3 {
         font-family: "ExpertSansBold", Helvetica, Arial;
         font-size: 1.16667em;
@@ -31,6 +45,22 @@
             border-bottom: 0;
             border-top: 1px solid #b7b7b7;
             text-align: left;
+
+            & a, &.static-link {
+                background-image: url(img/arrow-right-home.png);
+                background-position: 270px 12px;
+                background-repeat: no-repeat;
+                display: block;
+                font-size: 0.83333em;
+                letter-spacing: 0.1em;
+                padding: 10px 45px 10px 25px;
+            }
+            & a:hover, &.static-link:hover {
+                background-color: #f1f1f1;
+                text-decoration: none;
+            }
+
+
             .share {
                 background-image: url(img/share-home.png);
                 background-position: 262px 12px;
@@ -41,38 +71,8 @@
         }
     }
 }
-.service-category .module.links-list.basic-links-list {
-    background: #f5f5f5;
-}
-.rgba {
-    .service-category .module.links-list.basic-links-list {
-        background: #f5f5f5;
-    }
-    .module.links-list.basic-links-list {
-        background: transparent;
-    }
-    .module.links-list.links-list-goals {
-        a {
-            background: rgba(0, 126, 182, 0.85);
-        }
-    }
-}
-.module.links-list.basic-links-list:first-child {
-    margin-left: 0;
-}
-.module.links-list.basic-links-list ul li a, .module.links-list.basic-links-list ul li.static-link {
-    background-image: url(img/arrow-right-home.png);
-    background-position: 270px 12px;
-    background-repeat: no-repeat;
-    display: block;
-    font-size: 0.83333em;
-    letter-spacing: 0.1em;
-    padding: 10px 45px 10px 25px;
-}
-.module.links-list.basic-links-list ul li a:hover, .module.links-list.basic-links-list ul li.static-link:hover {
-    background-color: #f1f1f1;
-    text-decoration: none;
-}
+
+
 .module.links-list.links-list-snippet ul li {
     a {
         padding: 0 0 10px 0;
@@ -264,7 +264,13 @@
         line-height: 1.1em;
         padding: 15px 14px;
         text-transform: none;
+          .rgba & {
+            background: rgba(0, 126, 182, 0.85);
+        }
     }
+
+  
+
     a:hover {
         color: #000;
         background-color: #44acda;
