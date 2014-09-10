@@ -1,3 +1,4 @@
+@import "../1_global/00_required.less";
 /* ==========================================================================
 = 9. T205 - Product Category (E.g. Accounts)
 ========================================================================== */
@@ -13,7 +14,7 @@
     margin: 0 auto;
     width: 674px;
     p {
-        font: 1.16667em "ExpertSansLight", Helvetica, Arial;
+        font: 1.16667em @font-expert-sans-light;
         text-align: center;
     }
 }
@@ -29,7 +30,7 @@
             background: url(img/sprite-icon.png);
             background-position: 195px -4240px;
             background-repeat: no-repeat;
-            font-family: "ExpertSansRegular", Helvetica, Arial;
+            font-family: @font-expert-sans-regular;
             font-size: 1.5em;
             letter-spacing: 0.06em;
             margin-bottom: 10px;

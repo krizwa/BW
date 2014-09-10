@@ -1,3 +1,4 @@
+@import "../1_global/00_required.less";
 /* ==========================================================================
 = 3. T103 - (BU) Service group landing
 ========================================================================== */
@@ -53,7 +54,7 @@
             display: block;
             h3 {
                 color: #fff;
-                font-family: "ExpertSansBold", Helvetica, Arial;
+                font-family: @font-expert-sans-bold;
                 font-size: 1.16667em;
                 letter-spacing: 0.2em;
                 line-height: 1.2;
@@ -61,7 +62,7 @@
                 text-transform: uppercase;
             }
             p.snippet {
-                font-family: "ExpertSansLight", Helvetica, Arial;
+                font-family: @font-expert-sans-light;
                 font-size: 2.33333em;
                 letter-spacing: 0;
                 line-height: 1.2;
@@ -238,7 +239,7 @@
     width: 316px;
 }
 .service-group.international-banking .service-group-landing-manual-links .basic-links-list h2,.service-group.international-banking .service-group-landing-manual-links .basic-links-list h3,.service-group.brokerage .service-group-landing-manual-links .basic-links-list h2,.service-group.brokerage .service-group-landing-manual-links .basic-links-list h3 {
-    font-family: "ExpertSansBold", Helvetica, Arial;
+    font-family: @font-expert-sans-bold;
     margin-bottom: 19px;
     margin-top: 3px;
     padding: 0 0 0 25px;
