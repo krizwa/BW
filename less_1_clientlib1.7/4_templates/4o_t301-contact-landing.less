@@ -1,0 +1,200 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 14. T301 - Contact Landing
+========================================================================== */
+
+.contact-landing {
+    #map-container {
+        background: #c1c1c1 url(img/barclays-sprite.png) 0 -2928px no-repeat;
+        height: 500px;
+        margin: 0;
+        padding-bottom: 3.8em;
+        &.animate, &.animate #map-canvas, &.animate .map-zoom-controls {
+            .transition (all, 0.6s, ease-in-out);
+        }
+    }
+    #map-container.collapsed {
+        height: 3.7em;
+        #map-canvas {
+            visibility: hidden;
+        }
+        .map-zoom-controls {
+            opacity: 0;
+        }
+    }
+    #map-container {
+        #map-canvas {
+            height: 500px;
+            div {
+                bottom: 10px;
+            }
+        }
+        .toggle-view {
+            left: -19px;
+            position: absolute;
+            top: 9px;
+            z-index: 1;
+        }
+    }
+    span#global {
+        display: none !important;
+    }
+}
+.opacity .contact-landing #map-container.collapsed #map-canvas {
+    opacity: 0;
+    visibility: visible;
+}
+.contact-region-list {
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+    padding: 8px 8px 0 8px;
+    position: absolute;
+    width: 964px;
+    z-index: 1;
+    ul {
+        background: #616060 url(img/legacy-bg-474646-gradient.png) repeat-y bottom left;
+        color: #fff;
+        display: block;
+        font-size: 1.08333em;
+        font-weight: bold;
+        margin-bottom: 8px;
+        padding: 8px 24px;
+        list-style-type: none;
+        margin-bottom: 0px;
+        overflow: hidden;
+        .cssgradients & {
+            .gradient-custom (bottom, 50% 100%, 50% 0%, #464646, #606060);
+        }
+    }
+    li {
+        float: left;
+    }
+    a {
+        color: #fff;
+        outline: none;
+        padding: 10px 10px 5px 10px;
+    }
+    a.active {
+        background-color: rgba(245, 245, 245, 0.2);
+    }
+}
+.lt-ie8 {
+    .contact-region-list {
+        ul {
+            padding: 0 24px 4px 24px;
+        }
+        a {
+            display: block;
+            float: left;
+            overflow: hidden;
+        }
+    }
+}
+.no-rgba {
+    .contact-region-list {
+        a.active {
+            background: url(img/legacy-bg-f5f5f5-20.png) repeat top left;
+        }
+    }
+}
+.contact-office-list {
+    margin-right: -16px;
+    h2 {
+        clear: both;
+        font-family: @font-expert-sans-regular;
+        font-size: 1.33333em;
+        padding: 5px 0 1px 24px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        ul {
+            margin: 0;
+        }
+    }
+    & > ul {
+        float: left;
+        margin-right: 8px;
+        width: 316px;
+    }
+    .has-children {
+        a {
+            background: #fff;
+            color: #007eb6;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+}
+.contact-office-list a, .contact-office-list .has-children span {
+    background: #EBEBEB;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-family: @font-expert-sans-bold;
+    font-size: 1.08333em;
+    margin-bottom: 1px;
+    padding: 3px 24px;
+    text-transform: uppercase;
+}
+.js {
+    .contact-office-list {
+        .has-children {
+            span {
+                background-image: url(img/sprite-icon.png);
+                background-position: right -4390px;
+                background-repeat: no-repeat;
+            }
+            ul {
+                display: none;
+            }
+        }
+        .has-children.open {
+            span {
+                background-position: right -4490px;
+            }
+            ul {
+                display: block;
+            }
+        }
+    }
+}
+.complaints-copy {
+    margin-bottom: 8px;
+    .copy {
+        background: url(img/legacy-bg-fff-gradient.png) repeat-x bottom left;
+        color: black;
+        overflow: hidden;
+        padding: 27px 35px 1px 35px;
+        .cssgradients & {
+            .gradient-custom (bottom, 50% 100%, 50% 0%, #e5e5e5, #ffffff);
+        }
+        h2 {
+            font-family: @font-expert-sans-bold;
+            margin-bottom: 0.8em;
+        }
+        p {
+            font-size: 1.08333em;
+            line-height: 1.5;
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
+        p:first-of-type {
+            margin-bottom: 1em;
+            padding: 0 12px;
+            text-align: center;
+        }
+        span.button-pdf {
+            line-height: 1.5;
+            text-align: left;
+            width: 89%;
+            a {
+                padding: 2px 1em;
+                text-align: left;
+                width: 100%;
+            }
+        }
+    }
+}

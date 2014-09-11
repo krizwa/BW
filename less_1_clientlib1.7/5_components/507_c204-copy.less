@@ -1,0 +1,63 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 7. C204 - Copy
+========================================================================== */
+.content-primary {
+    .intro {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 1.3em;
+    }
+    .back-to-top {
+        color: black;
+        display: block;
+        font-family: @font-expert-sans-bold;
+        margin-top: 3em;
+        text-transform: uppercase;
+    }
+    .copy {
+        padding: 0 30px;
+        a:focus {
+            -webkit-box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+            -moz-box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+            box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+        }
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid #E5E5E5;
+        height: 0;
+        margin-bottom: 1.6em;
+    }
+}
+.lt-ie9 .content-primary .copy a:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.copy {
+    table {
+        font-size: 1.16667em;
+        font-family: @font-expert-sans-regular;
+        margin: 15px 0 15px 10px;
+        text-align: left;
+        tbody {
+            tr:nth-child(odd) {
+                background-color: #dbdbdb;
+            }
+        }
+        tr {
+            padding: 5px;
+            th {
+                font-weight: normal;
+                text-align: left;
+            }
+        }
+    }
+}
+.copy table tr th, .copy table tr td {
+    padding: 5px;
+    width: 25%;
+}
+.copy table tr th:first-child, .copy table tr td:first-child {
+    font-family: @font-expert-sans-bold;
+}

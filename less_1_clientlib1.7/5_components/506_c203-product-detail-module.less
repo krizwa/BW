@@ -1,0 +1,241 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 6. C203 - Product detail module (inc tabs) 
+========================================================================== */
+
+.campaign .product-details {
+    float: none;
+}
+.product-details {
+    *zoom: 1;
+    float: left;
+    overflow: hidden;
+    padding-left: 7px;
+    .clearfix();
+    .copy p {
+        color: black;
+    }
+    .product-detail-module {
+        float: left;
+        overflow: hidden;
+        padding-left: 15px;
+        width: 626px;
+        p {
+            color: #4e4e4e;
+        }
+        .copy {
+            margin-right: 8px;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+            padding-left: 25px;
+            padding-right: 40px;
+            li {
+                color: black;
+                background: transparent url(img/sprite-icon.png) 0 -1789px no-repeat;
+                border-bottom: 1px solid #e5e5e5;
+                font-size: 1em;
+                line-height: 1.5;
+                margin: 0 0 10px 0;
+                padding: 0 90px 15px 45px;
+                & strong, & b, & h2 {
+                    color: black;
+                    display: inline-block;
+                    font-family: @font-expert-sans-light;
+                    font-size: 1.5em;
+                    font-weight: normal;
+                    margin-bottom: 7px;
+                    padding-top: 3px;
+                }
+                b {
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+            }
+            li:focus {
+                outline: 0 none;
+            }
+        }
+    }
+    .product-detail-info .copy {
+        h2 {
+            font-family: @font-expert-sans-light;
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.45;
+        }
+    }
+}
+#tabs .product-details .product-detail-module {
+    width: 634px;
+}
+.product-details.pdf-listing {
+    float: none;
+    .product-detail-module ul li {
+        background: transparent url(img/sprite-icon.png) no-repeat -175px -3397px;
+        a {
+            color: #000;
+            font-size: 1.5em;
+            line-height: 1.2;
+        }
+    }
+}
+.content-primary .product-details .product-detail-info .copy {
+    background-color: #dfdfdf;
+    overflow: hidden;
+    margin-left: 25px;
+    padding: 18px;
+    width: 525px;
+}
+#tab .tabTitleEdit {
+    background: #44b5f1;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px 10px;
+}
+.product-fund-information {
+    margin-top: -25px;
+    h2 {
+        border-bottom: 4px solid #949494;
+        font-family: @font-expert-sans-regular;
+        font-size: 1.5em;
+        padding: 0 0 5px 10px;
+    }
+    p.snippet {
+        border-bottom: 4px solid #949494;
+        font-size: 0.83333em;
+        padding-bottom: 1em;
+        padding-left: 10px;
+    }
+    .product-fund-summary {
+        float: left;
+        margin: 30px 0 40px 0;
+        padding: 0 28px;
+        width: 909px;
+        h2 {
+            border-bottom: 0 none;
+            padding-left: 0;
+        }
+        table {
+            color: #fff;
+            margin: 10px 0 0;
+            text-align: center;
+            width: 100%;
+            th {
+                padding: 10px 5px 5px;
+                text-transform: uppercase;
+            }
+            & th, & td {
+                border-right: 1px solid #dbdbdb;
+                text-align: center;
+                width: 20%;
+            }
+            tr {
+                background-color: #393939;
+                td {
+                    padding: 0 10px 5px;
+                }
+            }
+            tr:nth-child(odd) {
+                background-color: #393939;
+            }
+        }
+        table.table-2 {
+            border-top: 1px solid #dbdbdb;
+            margin-top: 0;
+        }
+    }
+    .product-detail-tab-overview {
+        background: #ffffff url(img/bg-pattern-diagonal.png) repeat top left;
+        float: left;
+        padding: 34px 28px 40px 44px;
+        .product-detail-tab-overview-info {
+            float: left;
+            padding-right: 38px;
+            width: 440px;
+            h2 {
+                border-bottom: 0 none;
+                line-height: 1.4;
+                margin-bottom: 0;
+                padding: 0 0 40px 0;
+            }
+            p {
+                font-size: 1.16667em;
+            }
+        }
+        .video-module {
+            background: transparent;
+            float: right;
+            left: 0;
+            padding: 0;
+            width: 430px;
+        }
+    }
+}
+.product-fund-information .product-detail-tab-overview .video-module .video-inlne, .product-fund-information .product-detail-tab-overview .video-module object {
+    height: 270px;
+    width: 430px;
+}
+.product-category-tabs #tabs-4.tab-data .copy {
+    padding: 0;
+    ul {
+        list-style: none;
+        margin: 0 38px;
+        padding: 0;
+        li {
+            border-bottom: 1px solid #ececec;
+            overflow: hidden;
+            padding-top: 20px;
+            position: relative;
+            &:first-child {
+                margin-bottom: 40px;
+            }
+            h2 {
+                font-family: @font-expert-sans-bold;
+                font-size: 1.5em;
+                margin-bottom: 0.3em;
+                padding-left: 10px;
+            }
+            h3 {
+                border-bottom: 4px solid #949494;
+                font-family: @font-expert-sans-light;
+                font-size: 1.5em;
+                padding-left: 10px;
+            }
+            p {
+                float: left;
+                font-size: 1em;
+                padding-left: 10px;
+                width: 480px;
+            }
+            figure {
+                float: left;
+                img {
+                    padding: 0 15px 0 50px;
+                }
+            }
+            dl {
+                float: left;
+                dt {
+                    display: none;
+                }
+                dd {
+                    font-size: 0.91667em;
+                    margin: 0;
+                }
+                dd.name {
+                    font-family: @font-expert-sans-bold;
+                }
+                dd.blog {
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+}

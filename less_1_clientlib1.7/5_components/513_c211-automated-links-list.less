@@ -1,0 +1,189 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 13. C211 - Automated Links list
+========================================================================== */
+
+.module.automatic-links-list {
+    background: #EBEBEB;
+    padding: 8px;
+    h3 {
+        color: #fff;
+        font-family: @font-expert-sans-regular;
+    }
+}
+.product-category-landing .module.automatic-links-list {
+    background: #292929 url(img/legacy-quicklinks-bg.png) repeat-y top left;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    & a, & .static-link {
+        background: url(img/quicklinks_chevron.png) 290px center no-repeat;
+        color: #fff;
+        display: block;
+        padding: 0.7em 20px;
+    }
+    & a:hover, & .static-link:hover {
+        background-color: #1e1e1e;
+        text-decoration: none;
+    }
+    h2 {
+        color: #fff;
+    }
+    .share {
+        background-image: url(img/share-white.png);
+        background-position: 285px 12px;
+    }
+    li {
+        border-top: 1px solid #727272;
+        font-size: 1.33333em;
+        margin: 0;
+        text-align: left;
+    }
+    li:first-child {
+        border-top: 0 none;
+    }
+}
+.cssgradients .product-category-landing .module.automatic-links-list {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5c5c5c), color-stop(100%, #292929));
+    background-image: -webkit-linear-gradient(#5c5c5c, #292929);
+    background-image: -moz-linear-gradient(#5c5c5c, #292929);
+    background-image: -o-linear-gradient(#5c5c5c, #292929);
+    background-image: linear-gradient(#5c5c5c, #292929);
+}
+.links-list {
+    text-align: center;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        line-height: 1.1;
+        a {
+            color: black;
+            display: block;
+            padding: 16px 0;
+        }
+        a:hover {
+            background-color: #dcdcdc;
+            text-decoration: none;
+        }
+    }
+    h4 {
+        font-family: @font-expert-sans-regular;
+        font-size: 1.33333em;
+        margin: 0;
+    }
+    & .article-author, & .article-date {
+        font-size: 0.83333em;
+        color: #000;
+    }
+    .footer {
+        a {
+            color: black;
+            text-align: center;
+        }
+        a.news-archives {
+            border-right: 1px solid;
+            margin-right: 0.5em;
+            padding-right: 0.9em;
+        }
+        a.icon-twitter {
+            display: inline;
+            background: transparent;
+            text-indent: 0;
+            width: 100px;
+        }
+    }
+}
+.links-list.automatic-goal-statments {
+    background: #EBEBEB;
+    float: left;
+    height: auto !important;
+    min-height: 18.5em;
+    margin: 0 8px 8px 0;
+    padding: 0 0 20px;
+    width: 316px;
+    h2 {
+        padding-top: 20px;
+    }
+    ul li {
+        margin-bottom: 0;
+        padding-top: 15px;
+    }
+    a {
+        background: url(img/legacy-bg-007eb6-85.png) repeat;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        color: #fff;
+        display: block;
+        letter-spacing: 0.2em;
+        margin: 0 2px;
+        padding: 10px 0;
+        text-transform: none;
+    }
+    a:hover {
+        color: #000;
+        background-color: #44acda;
+        text-decoration: none;
+    }
+}
+.rgba .links-list.automatic-goal-statments a {
+    background: rgba(0, 126, 182, 0.85);
+}
+.home .links-list.automatic-goal-statments a, .content-primary .links-list.automatic-goal-statments a, .content-aside .links-list.automatic-goal-statments a {
+    background: #007EB6;
+}
+.lt-ie9 .links-list.automatic-goal-statments a {
+    letter-spacing: 0.1em;
+}
+.links-list-quick, .content-aside .links-list-quick {
+    background: #292929 url(img/legacy-quicklinks-bg.png) repeat-y top left;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+.cssgradients .links-list-quick, .cssgradients .content-aside .links-list-quick {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5c5c5c), color-stop(100%, #292929));
+    background-image: -webkit-linear-gradient(#5c5c5c, #292929);
+    background-image: -moz-linear-gradient(#5c5c5c, #292929);
+    background-image: -o-linear-gradient(#5c5c5c, #292929);
+    background-image: linear-gradient(#5c5c5c, #292929);
+}
+.links-list-quick h2, .content-aside .links-list-quick h2 {
+    color: #fff;
+}
+.links-list-quick a, .content-aside .links-list-quick a {
+    background: url(img/quicklinks_chevron.png) 290px center no-repeat;
+    color: #fff;
+    display: block;
+    padding: 0.5em 18px;
+}
+.links-list-quick a:hover, .content-aside .links-list-quick a:hover {
+    background-color: #1e1e1e;
+    text-decoration: none;
+}
+.links-list-quick li, .content-aside .links-list-quick li {
+    border-top: 1px solid #727272;
+    font-size: 1.33333em;
+    margin: 0;
+    text-align: left;
+}
+.brokerage .content-aside .links-list-quick {
+    padding: 8px 15px;
+    ul {
+        li {
+            border-top: 1px solid #727272;
+        }
+        li:first-child {
+            border-top: 0;
+        }
+        li a {
+            margin: 0 -15px;
+        }
+    }
+}

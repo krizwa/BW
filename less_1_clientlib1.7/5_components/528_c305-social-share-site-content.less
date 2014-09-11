@@ -1,0 +1,181 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 28. C305 - Social share for site content 
+========================================================================== */
+.social {
+    *zoom: 1;
+    margin-bottom: 1.6em;
+    .clearfix();
+    ul {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        background: #646464;
+        color: #fff;
+        float: left;
+        line-height: 2;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 7px!important;
+        a {
+            color: #fff;
+        }
+        a:focus {
+            outline: 0;
+        }
+        li {
+            float: left;
+            height: 2em;
+            margin: 0 5px;
+            outline: 0;
+        }
+        li:focus {
+            -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        }
+        strong {
+            line-height: 1.8;
+        }
+        & .social-email a, & .social-print a, & .social-share >a {
+            background: transparent url(img/sprite-icon.png) no-repeat;
+            padding-left: 23px;
+            letter-spacing: 0.1em;
+        }
+        .social-email a {
+                background-position: 0 -202px;
+        }
+        .social-print a {
+                background-position: 0 -402px;
+        }
+        .social-share {
+            position: relative;
+            z-index: 5;
+            & > a {
+                background-position: 0 -602px;
+                padding-left: 18px;
+            }
+            .addthis {
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                background: #fff;
+                border: 5px solid #999;
+                display: none;
+                left: 0px;
+                padding: 8px 0 0 8px;
+                position: absolute;
+                top: 2em;
+                width: 160px;
+                z-index: 5;
+                .at300b {
+                    float: left;
+                    margin: 0 8px 8px 0;
+                }
+            }
+        }
+        .social-views {
+            border-left: 1px solid #fff;
+            height: 1em;
+            margin-top: 6px;
+            padding-left: 7px;
+            & > span {
+                display: block;
+                margin-top: -6px;
+                outline: 0;
+            }
+            & > span:focus {
+                -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+                -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+                box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            }
+        }
+        .social-share:hover {
+            .addthis {
+                display: block;
+            }
+        }
+    }
+}
+
+.lt-ie9 .social {
+    ul {
+        li:focus {
+            outline: 2px solid #000 !important;
+            border: 0.1px solid #fff !important;
+        }
+        .social-views > span:focus {
+            outline: 2px solid #000 !important;
+            border: 0.1px solid #fff !important;
+        }
+    }
+    .meta-and-social .meta ul li:focus {
+        outline: 2px solid #000 !important;
+        border: 0.1px solid #fff !important;
+    }
+}
+
+.no-js .social ul .social-email a,.no-js .social ul .social-print a,.no-js .social ul .social-share &>a {
+    display: none;
+}
+.cssgradients .social ul .social-share .addthis {
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e8e8e8), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(bottom, #e8e8e8, #ffffff);
+    background-image: -moz-linear-gradient(bottom, #e8e8e8, #ffffff);
+    background-image: -o-linear-gradient(bottom, #e8e8e8, #ffffff);
+    background-image: linear-gradient(bottom, #e8e8e8, #ffffff);
+}
+.rgba .social ul .social-share .addthis {
+    border-color: rgba(0, 0, 0, 0.4);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.meta-and-social {
+    .meta ul {
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        -ms-border-radius: 3px 0 0 3px;
+        -o-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+        background: #646464;
+        color: #fff;
+        float: left;
+        line-height: 2;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 7px!important;
+        li {
+            outline: 0;
+        }
+        li:focus {
+            -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+            box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        }
+    }
+    .social ul {
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        -ms-border-radius: 0 3px 3px 0;
+        -o-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        padding: 0 7px 0 0!important;
+    }
+}
+.meta-and-social .meta-author,.meta-and-social .meta-date {
+    float: left;
+    height: 2em;
+    margin: 0 5px;
+}
+.meta-and-social .meta-author .copy p,.meta-and-social .meta-author .copy a {
+    color: #fff;
+    font-family: @font-expert-sans-bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}

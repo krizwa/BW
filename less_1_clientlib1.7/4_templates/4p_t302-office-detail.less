@@ -1,0 +1,122 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 15. T302 - Office Detail
+========================================================================== */
+.office-detail {
+    #map-container {
+        margin: 0 auto;
+        width: 980px;
+        #map-canvas {
+            height: 500px;
+        }
+        .contact-details {
+            right: 8px;
+            margin-bottom: 0;
+            position: absolute;
+            top: 8px;
+            width: 316px;
+            .copy {
+                background: url(img/legacy-bg-60564e-gradient-85.png) repeat-x bottom left;
+                color: #fff;
+                text-align: center;
+                h2 {
+                    color: #fff;
+                    margin-bottom: 0.4em;
+                }
+                p {
+                    font-size: 0.83333em;
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+        .map-zoom-controls {
+            display: none !important;
+            right: 332px;
+        }
+        .region-link {
+            background: #fff;
+            bottom: 8px;
+            font-size: 1.08333em;
+            left: 8px;
+            padding: 16px 24px;
+            position: absolute;
+            width: 592px;
+        }
+    }
+    .content-primary {
+        overflow: hidden;
+        h2 {
+            font-size: 1.33333em;
+        }
+        h3 {
+            font-family: @font-expert-sans-bold;
+            font-size: 1em;
+            margin: 1.3em 0 0.1em 0;
+        }
+    }
+    .back-to-all {
+        background: #616060 url(img/legacy-bg-474646-gradient.png) repeat-y bottom left;
+        color: #fff;
+        display: block;
+        font-size: 1.08333em;
+        font-weight: bold;
+        margin-bottom: 8px;
+        padding: 8px 24px;
+    }
+    .vcard {
+        margin: 1.3em 0 2.9em 0;
+    }
+    .office-address {
+        float: left;
+        margin-right: 8px;
+        padding-top: 8px;
+        width: 235px;
+        .org {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            margin-top: 2em;
+        }
+        .copy {
+            padding-left: 24px;
+            .copy {
+                padding: 0;
+            }
+        }
+    }
+    .office-directions {
+        float: left;
+        margin-right: 8px;
+        padding-right: 16px;
+        padding-top: 8px;
+        width: 381px;
+        .copy {
+            padding: 0;
+        }
+    }
+    .office-image {
+        float: left;
+    }
+    .social {
+        float: right;
+    }
+}
+.cssgradients .office-detail {
+    #map-container .contact-details .copy {
+        background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(78, 67, 58, 0.85)), color-stop(100%, rgba(96, 86, 78, 0.85)));
+        background-image: -webkit-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
+        background-image: -moz-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
+        background-image: -o-linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
+        background-image: linear-gradient(bottom, rgba(78, 67, 58, 0.85), rgba(96, 86, 78, 0.85));
+    }
+    .back-to-all {
+      .gradient-custom (top, 50% 100%, 50% 0%, #464646, #606060);
+    }
+}
+#map-container div div a img {
+    padding-left: 10px !important;
+}
