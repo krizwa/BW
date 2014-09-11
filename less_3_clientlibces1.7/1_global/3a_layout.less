@@ -1,0 +1,75 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 1. Layout (((2,3)))
+========================================================================== */
+
+#content-wrapper:focus {
+    outline: 0 none;
+}
+.content-wrap {
+    *zoom: 1;
+    background: #fff;
+    border: 1px solid rgba(102, 102, 102, 0.3) !important; //2 //3
+    margin: 0 auto; //2
+    overflow: hidden; //2
+    width: 980px; //2
+    .clearfix();
+    .lt-ie9 & {
+        border: 1px solid #cdcdcd; //2
+    }
+}
+// layout column widths and positions 
+.layout-one-col .content-primary {
+    margin: 0 auto;
+    width: 964px;
+}
+.layout-two-col {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 980px;
+    .clearfix();
+    .content-primary {
+        border-right: 332px solid white;
+        float: left;
+        width: 632px;
+    }
+    .content-aside {
+        float: left;
+        margin-top: 8px;
+        margin-left: -324px;
+        position: relative;
+        width: 316px;
+    }
+}
+.layout-two-one-col {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 980px;
+    .clearfix();
+    .content-aside {
+        float: right;
+        margin: 8px 8px 8px 0;
+        width: 316px;
+    }
+}
+// bg and padding shared across all layouts 
+.content-primary {
+    background: #fff;
+    padding: 8px 8px;
+}
+.contact-details .copy, .contact-details .module, .content-aside .module {
+    padding: 8px 20px;
+    margin-bottom: 8px;
+}
+// templates that start with copy module should be included here require extra padding at top 
+.expert-profile .content-primary, .generic-content .content-primary {
+    padding-top: 38px;
+}
+.generic-content.sitemap .content-primary {
+    padding-top: 8px;
+}
+// background image - inline in html so can be fixed on ipad 
+#bg, #bg img {
+  display: none;
+}

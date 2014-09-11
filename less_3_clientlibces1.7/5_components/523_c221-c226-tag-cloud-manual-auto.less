@@ -1,0 +1,87 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 23. C221/C226 - Tag Cloud Manual/ Tag Cloud Auto
+========================================================================== */
+
+.tag-cloud {
+    background: #EBEBEB;
+    text-align: center;
+    .clouds {
+        margin-bottom: 0;
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        li {
+            float: left;
+            margin: 0 8px 8px 0;
+        }
+    }
+}
+.tag-cloud.tag-cloud-auto {
+    background: transparent;
+    border-bottom: 1px solid #E5E5E5;
+    height: 200px;
+    letter-spacing: 0.2em;
+    padding: 20px 0 10px 0;
+    position: relative;
+    text-transform: uppercase;
+    ul {
+        overflow: visible;
+        position: relative;
+        width: 632px;
+        display: block;
+        height: 141px;
+        z-index: 101;
+        li {
+            position: absolute;
+            z-index: 100;
+            max-width: 300px;
+            span {
+                background: transparent url(img/tag-cloud-auto-circle.png) no-repeat -1px -1px;
+                display: block;
+                height: 13px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 13px;
+            }
+        }
+        li.left-top {
+            left: 45px;
+            top: 48px;
+        }
+        li.left-bottom {
+            left: 14px;
+            top: 116px;
+        }
+        li.right-top {
+            left: 384px;
+            top: 22px;
+        }
+        li.right-bottom {
+            left: 350px;
+            top: 106px;
+        }
+    }
+    img {
+        position: absolute;
+        top: 64px;
+        left: 7px;
+        z-index: 99;
+    }
+    h2 {
+        font-family: @font-expert-sans-regular;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+    }
+    a {
+        background: url(img/legacy-bg-007eb6-85.png) repeat;
+    }
+}
+.rgba .tag-cloud.tag-cloud-auto a {
+    background: rgba(0, 126, 182, 0.85);
+}
+.home .tag-cloud.tag-cloud-auto a, .content-primary .tag-cloud.tag-cloud-auto a, .content-aside .tag-cloud.tag-cloud-auto a {
+    background: #007EB6;
+}

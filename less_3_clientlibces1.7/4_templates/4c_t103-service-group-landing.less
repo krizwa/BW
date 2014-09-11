@@ -1,0 +1,330 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 3. T103 - (BU) Service group landing ((2))
+========================================================================== */
+.service-leading-copy {
+    font-size: 1.5em;
+    padding: 30px 35px 20px;
+    width: 570px;
+    .copy p {
+        line-height: 1.6;
+    }
+}
+.content-primary .service-leading-copy .copy {
+    padding: 0;
+}
+.brokerage .service-leading-copy {
+    padding-top: 10px;
+    padding-bottom: 0;
+    p {
+        margin-bottom: 0;
+    }
+}
+.product-family {
+    .product-leading-copy {
+        font-size: 1.5em;
+        .add-to-dock {
+            left: -8px;
+            position: relative;
+            top: -8px;
+        }
+        .copy {
+            overflow: hidden;
+            padding: 0 30px 20px;
+            position: relative;
+            width: 570px;
+        }
+    }
+    .content-primary .contact-us-wide-complaince {
+        margin-top: 20px;
+    }
+}
+.service-promo-container {
+    *zoom: 1;
+    clear: both;
+    margin-right: -10px; //2
+    .promo-group {
+        overflow: hidden;
+    }
+    .service-group-rss {
+        position: relative;
+        text-align: center;
+        a {
+            color: #000;
+            display: block;
+            h3 {
+                color: #fff;
+                font-family: @font-expert-sans-bold;
+                font-size: 1.16667em;
+                letter-spacing: 0.2em;
+                line-height: 1.2;
+                padding: 1.2em 23px 0 23px;
+                text-transform: uppercase;
+            }
+            p.snippet {
+                font-family: @font-expert-sans-light;
+                font-size: 2.33333em;
+                letter-spacing: 0;
+                line-height: 1.2;
+                padding: 0 15px;
+                margin-bottom: 0.6em;
+            }
+            .stats {
+                bottom: 0.5em;
+                left: 10px;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                dt {
+                    display: none;
+                }
+                dd {
+                    display: inline;
+                    margin: 0;
+                }
+            }
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .service-group-rss.rss-medium {
+        width: 316px;
+        height: 28em;
+    }
+    .service-group-rss.rss-medium-wide {
+        width: 640px;
+        height: 28em;
+    }
+    .service-group-rss.rss-large {
+        width: 316px;
+        height: 36em;
+    }
+    .service-group-rss.rss-large-wide {
+        width: 640px;
+        height: 36em;
+    }
+    .service-group-rss.rss-bg-color-1 {
+        background: #eaeaea;
+        a {
+          color: #000;
+        }
+    }
+    .service-group-rss.rss-bg-color-1 a h3 {
+      color: #000;
+    }
+    .service-group-rss.rss-bg-color-1:hover {
+        background: #eeeeee;
+    }
+    .service-group-rss.rss-bg-color-2 {
+        background-color: #950d3a;
+        color: #fff;
+    }
+    .service-group-rss.rss-bg-color-2:hover {
+        background: #aa3d61;
+    }
+    .service-group-rss.rss-bg-color-3 {
+        background-color: #d87900;
+        color: #fff;
+    }
+    .service-group-rss.rss-bg-color-3:hover {
+        background: #e09433;
+    }
+    .image-module {
+        .image-right {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        .image-left {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+    .image-medium.image-module {
+        img {
+            height: 28em;
+            width: 316px;
+        }
+    }
+    .image-medium-wide.image-module {
+        .promo-inner {
+            height: 28em;
+        }
+        img {
+            height: 28em;
+            width: 640px;
+        }
+    }
+    .image-large.image-module {
+        img {
+            height: 36em;
+            width: 316px;
+        }
+    }
+    .image-large-wide.image-module {
+        img {
+            height: 36em;
+            width: 640px;
+        }
+    }
+}
+.service-promo-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.verticalCenterHelperContainer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.feedEkList {
+    vertical-align: middle;
+    display: inline-block;
+}
+.service-promo-container .promo,.service-promo-container .video-inlne,.service-promo-container .video-overlay,.service-promo-container .image-module,.service-promo-container .service-group-rss, .service-promo-container iframe {
+    float: left;
+    margin: 0 8px 8px 0;
+}
+.service-promo-container iFrame {
+    overflow: hidden;
+    .lt-ie9 & {
+        border: 0 none;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+}
+.service-promo-container .video-overlay,.service-promo-container .image-module {
+    position: relative;
+}
+/*
+.cssgradients .service-promo-container {
+    .service-group-rss.rss-bg-color-1 {
+        background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5e5e5), color-stop(100%, #ffffff));
+        background-image: -webkit-linear-gradient(bottom, #e5e5e5, #ffffff);
+        background-image: -moz-linear-gradient(bottom, #e5e5e5, #ffffff);
+        background-image: -o-linear-gradient(bottom, #e5e5e5, #ffffff);
+        background-image: linear-gradient(bottom, #e5e5e5, #ffffff);
+    }
+    .service-group-rss.rss-bg-color-2 {
+        background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8d0535), color-stop(100%, #9d063b));
+        background-image: -webkit-linear-gradient(bottom, #8d0535, #9d063b);
+        background-image: -moz-linear-gradient(bottom, #8d0535, #9d063b);
+        background-image: -o-linear-gradient(bottom, #8d0535, #9d063b);
+        background-image: linear-gradient(bottom, #8d0535, #9d063b);
+    }
+    .service-group-rss.rss-bg-color-3 {
+        background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #4e433a), color-stop(100%, #60564e));
+        background-image: -webkit-linear-gradient(bottom, #4e433a, #60564e);
+        background-image: -moz-linear-gradient(bottom, #4e433a, #60564e);
+        background-image: -o-linear-gradient(bottom, #4e433a, #60564e);
+        background-image: linear-gradient(bottom, #4e433a, #60564e);
+    }
+} */ //2
+.lt-ie9 .service-promo-container .service-group-rss a {
+    h3 {
+        letter-spacing: 0.17em;
+    }
+    p.snippet {
+        letter-spacing: 0;
+    }
+}
+.service-group.international-banking .landing-page-snippet,.service-group.brokerage .landing-page-snippet {
+    font-size: 1.5em;
+    padding: 61px 35px 36px;
+}
+.service-group.international-banking .service-group-landing-promos,.service-group.brokerage .service-group-landing-promos {
+    background-color: #fff;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 8px 0 8px 8px;
+}
+.service-group.international-banking .service-group-landing-promos .promo,.service-group.brokerage .service-group-landing-promos .promo {
+    float: left;
+    margin-right: 8px;
+}
+.service-group.international-banking .service-group-landing-manual-links,.service-group.brokerage .service-group-landing-manual-links {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 8px 0 50px 0;
+    width: 964px;
+}
+.service-group.international-banking .service-group-landing-manual-links .basic-links-list,.service-group.brokerage .service-group-landing-manual-links .basic-links-list {
+    float: left;
+    width: 316px;
+}
+.service-group.international-banking .service-group-landing-manual-links .basic-links-list h2,.service-group.international-banking .service-group-landing-manual-links .basic-links-list h3,.service-group.brokerage .service-group-landing-manual-links .basic-links-list h2,.service-group.brokerage .service-group-landing-manual-links .basic-links-list h3 {
+    font-family: @font-expert-sans-bold;
+    margin-bottom: 19px;
+    margin-top: 3px;
+    padding: 0 0 0 25px;
+    text-align: left;
+}
+.service-group.international-banking .service-group-landing-manual-links .basic-links-list h3,.service-group.brokerage .service-group-landing-manual-links .basic-links-list h3 {
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.service-group.international-banking .service-group-landing-manual-links .basic-links-list ul li,.service-group.brokerage .service-group-landing-manual-links .basic-links-list ul li {
+    border-top: 1px solid #ebebeb;
+}
+.service-group.international-banking .service-group-landing-manual-links .basic-links-list ul li a,.service-group.brokerage .service-group-landing-manual-links .basic-links-list ul li a {
+    background-position: 293px 12px;
+    padding-right: 30px;
+}
+.service-group {
+    .promo-service-landing {
+        margin-bottom: 30px;
+    }
+    .slides_container {
+        position: relative;
+    }
+    .service-promo-container .module.links-list.links-list-quick {
+        background: #cccccc;
+        color: black;
+        float: left;
+        height: 28em;
+        margin: 0 8px 8px 0;
+        width: 316px;
+        h2 {
+            color: black;
+            padding: 20px 0 0;
+        }
+        li {
+            border-top: 1px solid #b6b6b6;
+            margin: 0 20px;
+            a {
+                color: black;
+                background-position: 260px center;
+                padding: 10px 3px;
+            }
+            a:hover {
+                background-color: #dcdcdc;
+            }
+        }
+        li:first-child {
+            border-top: 0;
+        }
+    }
+}
+.service-group.brokerage {
+    .landing-page-snippet {
+        line-height: 1.5;
+        margin-bottom: 0;
+        padding: 21px 35px;
+    }
+    .service-group-landing-promos {
+        overflow: hidden;
+    }
+}
+.service-group .slides_container,.service-group .promo-service-group {
+    height: 194px;
+    overflow: hidden;
+    width: 612px;
+}
+.service-group .slides_container h3,.service-group .promo-service-group h3 {
+    padding-top: 1em;
+}
+.service-group .slides_container .snippet,.service-group .promo-service-group .snippet {
+    padding: 10px 30px 0 10px;
+}

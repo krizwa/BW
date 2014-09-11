@@ -1,0 +1,76 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 5. C202 - Featured Content
+========================================================================== */
+
+.featured-content {
+    background: url(img/legacy-bg-000-70.png) repeat top left;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    h2 {
+        font-size: 2.33333em;
+    }
+    p {
+        font-family: @font-expert-sans-light;
+        font-size: 1.16667em;
+        letter-spacing: 0.1em;
+        line-height: 1.2;
+    }
+    a:hover {
+        text-decoration: none;
+        h2 {
+            text-decoration: underline;
+        }
+    }
+    .volume {
+        font-family: @font-expert-sans-bold;
+        font-size: 1.16667em;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .button {
+        bottom: 17px;
+        position: absolute;
+        right: 20px;
+    }
+    .stats {
+        bottom: 20px;
+        left: 20px;
+        margin-bottom: 0px;
+        position: absolute;
+        dt {
+            display: none;
+        }
+        dd {
+            float: left;
+            margin-left: 0px;
+        }
+        .date {
+            margin-right: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+.rgba .featured-content {
+    background: rgba(0, 0, 0, 0.7);
+}
+.featured-content h2, .featured-content p, .featured-content a {
+    color: #fff;
+}
+.featured-content-volume img, .featured-content-article img {
+    float: left;
+    height: 297px;
+    width: 486px;
+}
+.featured-content-volume .copy-wrapper, .featured-content-article .copy-wrapper {
+    float: left;
+    padding: 30px 20px 25px;
+    width: 454px;
+}
+.featured-content-volume .stats, .featured-content-article .stats {
+    left: 506px;
+}
+.featured-content-news .copy-wrapper {
+    padding: 60px 90px;
+}

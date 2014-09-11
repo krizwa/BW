@@ -1,0 +1,87 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 2.  T102 - No Results
+========================================================================== */
+.search-results-wrapper.no-results {
+    min-height: 0;
+    #load-more {
+        visibility: hidden;
+    }
+    .search-results-container {
+        padding-top: 0;
+        min-height: 0;
+        overflow: hidden;
+        .content-aside {
+            margin-top: 0;
+        }
+    }
+    .search-tips {
+        background: rgba(255, 255, 255, 0.85);
+        color: #000; 
+        display: block;
+        margin: 0;
+        padding: 8px 16px;
+        position: relative;
+        width: 616px;
+        float: left;
+        ul {
+            font-size: 1.5em;
+            list-style: none;
+            margin: 27px 0 36px 16px;
+            padding: 0;
+            text-align: left;
+            li {
+                background: url(img/sprite-icon.png) 0 -1787px no-repeat;
+                margin: 0 0 12px 0;
+                padding: 0 0 0 44px;
+                outline: 0;
+            }
+            li:focus {
+                .box-shadow-style2(1px, white, 3px, black); 
+            }
+        }
+        hr {
+            border-top: 1px solid #e5e5e5;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 30px 0 0 0;
+        }
+        p {
+            font-weight: bold;
+            font-size: 1.16667em;
+            line-height: 1.3em;
+        }
+        span.phone-number {
+            letter-spacing: 0.2em;
+        }
+    }
+    h2 {
+        padding-top: 6px;
+    }
+    .contact-us-wide {
+        .phone-wrap {
+            width: 574px !important;
+        }
+        .content-wrap {
+            width: 574px !important;
+        }
+    }
+}
+.search-results-wrapper.no-results .filter,.search-results-wrapper.no-results .content-aside .contact-us,.search-results-wrapper.no-results #load-more {
+    display: none;
+}
+.no-rgba .search-results-wrapper.no-results .search-tips {
+    background: url(img/legacy-bg-fff-85.png) repeat top left;
+}
+.lt-ie9 .search-results-wrapper.no-results .search-tips ul {
+    li {
+        border: 2px solid transparent;
+    }
+    li:focus {
+        border: 2px solid #000;
+    }
+}
+.search-results-wrapper.no-results .search-tips .contact-us-wide,.search-results-wrapper.no-results .search-tips .content-wrap {
+    background: transparent;
+}
