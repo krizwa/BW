@@ -1,0 +1,40 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 25. C223 - FAQ / Eligibility Questionnaire
+========================================================================== */
+
+.eligibility-questionnaire {
+    padding: 0 30px;
+    h3 {
+        border-top: 2px solid #DEDEDE;
+        font-family: @font-expert-sans-regular;
+        padding: 20px 0 10px;
+    }
+    fieldset ul li {
+        p {
+            background-color: #eee;
+            letter-spacing: 0.07em;
+        }
+        .answer-options {
+            float: left;
+            margin: 0;
+            dt {
+                cursor: pointer;
+                font-weight: bold;
+                margin: 0 0 0 35px;
+                padding: 2px 0;
+                position: relative;
+                text-align: center;
+                text-transform: uppercase;
+                top: 7px;
+            }
+            dd {
+                float: left;
+                margin: 0 0 0 10px;
+                position: relative;
+                top: -14px;
+            }
+        }
+    }
+}
